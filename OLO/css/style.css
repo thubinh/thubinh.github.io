@@ -1,0 +1,161 @@
+*{
+    box-sizing: border-box;
+}
+img{
+    max-width: 100%;
+}
+.carousel-control{
+    background-image: none !important;
+}
+header{
+    background-color: #33e2d1;
+}
+.signIn, .logo-hunters{
+    display: inline-block;
+}
+.header-nav{
+    background-color: #33e2d1 !important;
+    border: none !important;
+    margin-bottom: 0!important;
+}
+.header-nav_desc{
+    float: right;
+}
+.navbar-nav-item:hover{
+    border-bottom: 1px solid #ffffff;
+}
+.navbar-nav-button{
+    background-color: #ffffff;
+    border: none;
+    border-radius: 100px;
+}
+.intro{
+    background-color: #33e2d1;
+    text-align: center;
+    color: #ffffff;
+}
+.intro_desc{
+    font-weight: bold;
+}
+.intro_button{
+    background-color: #ffffff;
+    border: 5px solid #99f1e8;
+    border-radius: 100px;
+    padding: 5px 10px;
+}
+.carousel-indicators{
+    float: right;
+}
+.about{
+    background-color: #f6f8f9;
+}
+.aboutSevices_tittle{
+    color: #33e2d1;
+    font-weight: bold;
+}
+.aboutServices_tittle_bottom{
+    font-weight: bold;
+}
+.patented_select{
+    font-weight: bold;
+}
+.patented_button{
+    border: none;
+    border-radius: 100px;
+    background-color: #ffffff;
+    padding: 5px 15px;
+}
+.patented_button:hover{
+    box-shadow: 0px 0px 20px 10px #ebebeb;
+}
+.featured{
+    background-color: #1accbb;
+    color: #ffffff;
+}
+.featured-top{
+    text-align: center;
+}
+.featured_tittle{
+    font-weight: bold;
+}
+.featured-item_tittle{
+    font-weight: bold;
+}
+.step{
+    text-align: center;
+}
+.step-title{
+    font-weight: bold;
+    color: #33e2d1;
+}
+.step-item{
+    text-align: center;
+}
+.step-item-box{
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    border-radius: 50px;
+    box-shadow: 0px 0px 10px 10px #efeff5;
+    margin: auto;
+}
+.step-desc-text{
+    font-weight: bold;
+    color: #33e2d1;
+}
+.step_button{
+    background-color: #33e2d1;
+    border-radius: 100px;
+    border: 3px solid #c1f6f1;
+}
+.funtions{
+    background-color: #f2f6f9;
+    text-align: center;
+}
+.funtions-slide_tittle{
+    font-weight: bold;
+    color: #33e2d1;
+}
+.tutorial-demo{
+    background-color: #33e2d0;
+}
+.video-tutorial{
+    width: 100%;
+    height: 373px;
+    display: table;
+    text-align: center;
+    background: url("../images/background-video.png") no-repeat;
+}
+.video-play__btn{
+    height: 373px;
+    background-color: transparent;
+    color: #33e2d1;
+}
+@media only screen and (min-width: 768px){
+.container{
+    width: 768px;
+}
+.header-top_right{
+    float: right;
+}
+.funtions-slide-text{
+    text-align: right;
+}
+.video-tutorial{
+    height: 758px;
+}
+.video-play__btn{
+   height: 758px;
+}
+}
+@media only screen and (min-width: 922px){
+
+}
+@media only screen and (min-width: 1170px){
+
+}
+@media only screen and (min-width: 1920px){
+.container{
+    width: 1920px;
+}
+}
