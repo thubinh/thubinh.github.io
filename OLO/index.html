@@ -16,7 +16,7 @@
     <div class="header-top">
         <div class="container">
             <div class="row">
-                <div class="col-sm-6 col-md-6 col-lg-6">
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
                     <div class="header-top_left">
                         <div class="header-logo">
                             <img src="images/logo_header.png" alt="" class="logo-header_img">
@@ -24,15 +24,15 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-6 col-md-6 col-lg-6">
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
                     <div class="header-top_right">
                         <div class="signIn">
                             <img src="images/signIn_icon.png" alt="" class="signIn-icon">
-                            <span class="signIn_name">サインイン</span>
+                            <a href="" class="signIn_name">サインイン</a>
                         </div>
                         <div class="logo-hunters">
                             <img src="images/logo-hunters-header.png" class="logo-hunters_img">
-                            <span><a href="">HUNTERS</a></span>
+                            <a href="">HUNTERS</a>
                         </div>
                     </div>
                 </div>
@@ -40,7 +40,7 @@
         </div>
     </div>
     <nav class="header-nav navbar navbar-default">
-        <div class="container-fluid header-nav_desc">
+        <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                     <span class="sr-only">Toggle navigation</span>
@@ -49,7 +49,7 @@
                     <span class="icon-bar"></span>
                 </button>
             </div>
-            <div class="collapse navbar-collapse">
+            <div class="collapse navbar-collapse header-nav_desc" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li class="navbar-nav-item"><a href="">TOP</a></li>
                     <li class="navbar-nav-item"><a href="">OLOとは？</a></li>
@@ -82,15 +82,15 @@
                     <div class="carousel-inner" role="listbox">
                         <div class="item active">
                             <img src="images/slide-intro1.png" alt="">
-                            <p>OLOでキャンペーンサイトを簡単に作れる</p>
+                            <p class="intro-item_caption">OLOでキャンペーンサイトを簡単に作れる</p>
                         </div>
                         <div class="item">
                             <img src="images/slide-intro1.png" alt="">
-                            <p>キャンペーンサイトでユーザーを集めることができる</p>
+                            <p class="intro-item_caption">キャンペーンサイトでユーザーを集めることができる</p>
                         </div>
                         <div class="item">
                             <img src="images/slide-intro1.png" alt="">
-                            <p>ユーザーの投稿写真をクーポンにしてビジネスにつなげるこ</p>
+                            <p class="intro-item_caption">ユーザーの投稿写真をクーポンにしてビジネスにつなげるこ</p>
                         </div>
                     </div>
                 </div>
@@ -223,10 +223,10 @@
                         <div class="featured-slide_box">
                             <div class="carousel-inner" role="listbox">
                                 <div class="item active">
-                                    <img src="images/featured-slide1.png" alt="...">
+                                    <!--<img src="images/featured-slide1.png" alt="...">-->
                                 </div>
                                 <div class="item">
-                                    <img src="images/featured-slide1.png" alt="...">
+                                    <!--<img src="images/featured-slide1.png" alt="...">-->
                                 </div>
                             </div>
                         </div>
@@ -373,26 +373,23 @@
             <button type="button" class="btn video-play__btn" data-toggle="modal" data-target="#myModal">
                 <i class="fa fa-play-circle-o fa-5x video-play__icon" aria-hidden="true"></i>
             </button>
-            <div class="modal fade" tabindex="-1" role="dialog">
-                <div class="modal-dialog" role="document">
+            <div class="modal fade" id="myModal" role="dialog">
+                <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                            <h4 class="modal-title video_title">Video title</h4>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <video src="video/HN24h.mp4" controls class="video-play__desc"></video>
                         </div>
-                        <div class="modal-body">
-                            <video src=""></video>
-                        </div>
-                    </div><!-- /.modal-content -->
-                </div><!-- /.modal-dialog -->
-            </div><!-- /.modal -->
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="template-demo">
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12 col-sm-6">
                         <div class="template-left">
-                            <h5 class="template-title">キャンペーンテンプレート</h5>
+                            <h3 class="template-title">キャンペーンテンプレート</h3>
                             <p class="template-desc">5オプションのキャンペーンのテーマがあります。</p>
                             <div class="carousel slide template-slide" data-ride="carousel">
                                 <ol class="carousel-indicators">
@@ -405,19 +402,19 @@
                                         <div class="row">
                                             <div class="col-xs-4 col-sm-4">
                                                 <div class="template-item">
-                                                    <img src="" alt="" class="template-item_img">
+                                                    <img src="images/template-item1.png" alt="" class="template-item_img">
                                                     <span class="template-item_caption">テーマデモ1</span>
                                                 </div>
                                             </div>
                                             <div class="col-xs-4 col-sm-4">
                                                 <div class="template-item">
-                                                    <img src="" alt="" class="template-item_img">
+                                                    <img src="images/template-item1.png" alt="" class="template-item_img">
                                                     <span class="template-item_caption">テーマデモ1</span>
                                                 </div>
                                             </div>
                                             <div class="col-xs-4 col-sm-4">
                                                 <div class="template-item">
-                                                    <img src="" alt="" class="template-item_img">
+                                                    <img src="images/template-item1.png" alt="" class="template-item_img">
                                                     <span class="template-item_caption">テーマデモ1</span>
                                                 </div>
                                             </div>
@@ -427,19 +424,19 @@
                                         <div class="row">
                                             <div class="col-xs-4 col-sm-4">
                                                 <div class="template-item">
-                                                    <img src="" alt="" class="template-item_img">
+                                                    <img src="images/template-item1.png" alt="" class="template-item_img">
                                                     <span class="template-item_caption">テーマデモ1</span>
                                                 </div>
                                             </div>
                                             <div class="col-xs-4 col-sm-4">
                                                 <div class="template-item">
-                                                    <img src="" alt="" class="template-item_img">
+                                                    <img src="images/template-item1.png" alt="" class="template-item_img">
                                                     <span class="template-item_caption">テーマデモ1</span>
                                                 </div>
                                             </div>
                                             <div class="col-xs-4 col-sm-4">
                                                 <div class="template-item">
-                                                    <img src="" alt="" class="template-item_img">
+                                                    <img src="images/template-item1.png" alt="" class="template-item_img">
                                                     <span class="template-item_caption">テーマデモ1</span>
                                                 </div>
                                             </div>
@@ -467,26 +464,28 @@
             </div>
             <div class="brand-main">
                 <ul class="brand-list">
-                    <li><a href=""><img src="" alt="" class="brand-logo"></a></li>
-                    <li><a href=""><img src="" alt="" class="brand-logo"></a></li>
-                    <li><a href=""><img src="" alt="" class="brand-logo"></a></li>
-                    <li><a href=""><img src="" alt="" class="brand-logo"></a></li>
-                    <li><a href=""><img src="" alt="" class="brand-logo"></a></li>
+                    <li class="brand-logo"><a href=""><img src="images/brand1.png" alt="" ></a></li>
+                    <li class="brand-logo"><a href=""><img src="images/brand1.png" alt="" ></a></li>
+                    <li class="brand-logo"><a href=""><img src="images/brand1.png" alt="" ></a></li>
+                    <li class="brand-logo"><a href=""><img src="images/brand1.png" alt="" ></a></li>
+                    <li class="brand-logo"><a href=""><img src="images/brand1.png" alt="" ></a></li>
                 </ul>
                 <ul class="brand-list">
-                    <li><a href=""><img src="" alt="" class="brand-logo"></a></li>
-                    <li><a href=""><img src="" alt="" class="brand-logo"></a></li>
-                    <li><a href=""><img src="" alt="" class="brand-logo"></a></li>
-                    <li><a href=""><img src="" alt="" class="brand-logo"></a></li>
-                    <li><a href=""><img src="" alt="" class="brand-logo"></a></li>
+                    <li class="brand-logo"><a href=""><img src="images/brand1.png" alt="" ></a></li>
+                    <li class="brand-logo"><a href=""><img src="images/brand1.png" alt="" ></a></li>
+                    <li class="brand-logo"><a href=""><img src="images/brand1.png" alt="" ></a></li>
+                    <li class="brand-logo"><a href=""><img src="images/brand1.png" alt="" ></a></li>
+                    <li class="brand-logo"><a href=""><img src="images/brand1.png" alt="" ></a></li>
                 </ul>
             </div>
         </div>
     </section>
     <section class="clientsay">
-        <p class="quote">“ テキストが入りますテキストが入りますテキストが入りますテキ ス対象とするを収集することも可能です ”</p>
-        <span class="client">創業者名前が入ります</span>
-        <a href="" class="quote_link">http: ///www.example.com</a>
+        <div class="quote-int">
+            <p class="quote">“ テキストが入りますテキストが入りますテキストが入りますテキ ス対象とするを収集することも可能です ”</p>
+            <p class="client">創業者名前が入ります</p>
+            <a href="" class="quote_link">http: ///www.example.com</a>
+        </div>
     </section>
     <section class="price">
         <div class="container">
@@ -498,7 +497,7 @@
                 <div class="row">
                     <div class="col-xs-12 col-sm-4">
                         <div class="price-item">
-                            <img src="" alt="" class="price-item_img">
+                            <img src="images/price-item1.png" alt="" class="price-item_img">
                             <h5 class="price-item_title">無料プラン</h5>
                             <p class="price-item_desc">キャンペーン開催　月１件まで</p>
                             <button class="price-item_button"><a href="">プランを選択</a></button>
@@ -506,7 +505,7 @@
                     </div>
                     <div class="col-xs-12 col-sm-4">
                         <div class="price-item">
-                            <img src="" alt="" class="price-item_img">
+                            <img src="images/price-item1.png" alt="" class="price-item_img">
                             <h5 class="price-item_title">無料プラン</h5>
                             <p class="price-item_desc">キャンペーン開催　月１件まで</p>
                             <button class="price-item_button"><a href="">プランを選択</a></button>
@@ -514,7 +513,7 @@
                     </div>
                     <div class="col-xs-12 col-sm-4">
                         <div class="price-item">
-                            <img src="" alt="" class="price-item_img">
+                            <img src="images/price-item1.png" alt="" class="price-item_img">
                             <h5 class="price-item_title">無料プラン</h5>
                             <p class="price-item_desc">キャンペーン開催　月１件まで</p>
                             <button class="price-item_button"><a href="">プランを選択</a></button>
@@ -526,31 +525,33 @@
     </section>
     <section class="contact">
         <div class="container">
-            <div class="contact-top">
-                <h3 class="contact-title">お問い合わせ</h3>
-                <p class="contact-desc">お気軽にお問い合わせ下さい。専門スタッフが無料でご相談をを承ります。</p>
-            </div>
-            <div class="contact-info">
-                <form class="form-inline">
-                    <div class="form-group contact-phone">
-                        <i class="fa fa-phone contact-phone_icon" aria-hidden="true"></i>
-                        <span class="contact-phone_number">電話:   0120-t987-45</span>
-                    </div>
-                    <div class="form-group contact-mail">
-                        <i class="fa fa-envelope-o contact-mail_icon" aria-hidden="true"></i>
-                        <span class="contact-mail_address">メールアドレス:   info@olo.jp</span>
-                    </div>
-                    <div class="form-group contact-place">
-                        <i class="fa fa-map-marker" aria-hidden="true"></i>
-                        <span class="contact-place_address">場所:  ここで位t置情報を埋めます</span>
-                    </div>
-                </form>
-            </div>
-            <div class="contact-button">
-                <form class="form-inline">
-                    <button class="contact-start"><a href="">始める</a></button>
-                    <button class="contact-signIn"><a href="">サインイン</a></button>
-                </form>
+            <div class="contact-box">
+                <div class="contact-top">
+                    <h3 class="contact-title">お問い合わせ</h3>
+                    <p class="contact-desc">お気軽にお問い合わせ下さい。専門スタッフが無料でご相談をを承ります。</p>
+                </div>
+                <div class="contact-info">
+                    <form class="form-inline">
+                        <div class="form-group contact-phone">
+                            <i class="fa fa-phone contact-phone_icon" aria-hidden="true"></i>
+                            <span class="contact-phone_number">電話:   0120-t987-45</span>
+                        </div>
+                        <div class="form-group contact-mail">
+                            <i class="fa fa-envelope-o contact-mail_icon" aria-hidden="true"></i>
+                            <span class="contact-mail_address">メールアドレス:   info@olo.jp</span>
+                        </div>
+                        <div class="form-group contact-place">
+                            <i class="fa fa-map-marker" aria-hidden="true"></i>
+                            <span class="contact-place_address">場所:  ここで位t置情報を埋めます</span>
+                        </div>
+                    </form>
+                </div>
+                <div class="contact-button">
+                    <form class="form-inline">
+                        <button class="contact-start"><a href="">始める</a></button>
+                        <button class="contact-signIn"><a href="">サインイン</a></button>
+                    </form>
+                </div>
             </div>
         </div>
     </section>
@@ -560,7 +561,7 @@
         <div class="row">
             <div class="col-xs-12 col-sm-6">
                 <div class="footer-left">
-                    <a href=""><img src="" alt="" class="logo-footer"></a>
+                    <a href=""><img src="images/logo-footer.png" alt="" class="logo-footer"></a>
                     <span class="sosial">
                         <a href=""><i class="fa fa-facebook fa-fw social-icon" aria-hidden="true"></i></a>
                         <a href=""><i class="fa fa-twitter fa-fw social-icon" aria-hidden="true"></i></a>
