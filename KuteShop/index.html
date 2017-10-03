@@ -1,0 +1,2253 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kute Shop</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-xs-12">
+                        <div class="header-top-left">
+                            <div class="currency header-left-item dropdown">
+                                <button id="dLabel_currency" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="header-left-item-button">
+                                    USD
+                                    <i class="fa fa-angle-down currency-icon" aria-hidden="true"></i>
+                                </button>
+                                <ul class="currency-menu dropdown-menu" aria-labelledby="dLabel_currency">
+                                    <li><a href="">USD</a></li>
+                                    <li><a href="">VNĐ</a></li>
+                                </ul>
+                            </div>
+                            <div class="language header-left-item dropdown">
+                                <button id="dLabel_language" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="header-left-item-button">
+                                    English
+                                    <i class="fa fa-angle-down language-icon" aria-hidden="true"></i>
+                                </button>
+                                <ul class="language-menu dropdown-menu" aria-labelledby="dLabel_language">
+                                    <li><a href="">English</a></li>
+                                    <li><a href="">Vietnamese</a></li>
+                                </ul>
+                            </div>
+                            <div class="social header-left-item">
+                                <a href=""><i class="fa fa-facebook social-icon" aria-hidden="true"></i></a>
+                                <a href=""><i class="fa fa-twitter social-icon" aria-hidden="true"></i></a>
+                                <a href=""><i class="fa fa-pinterest-p social-icon" aria-hidden="true"></i></a>
+                                <a href=""><i class="fa fa-google-plus social-icon" aria-hidden="true"></i></a>
+                            </div>
+                        </div> <!--top-left-->
+                    </div>
+                    <div class="col-sm-6 col-xs-12">
+                        <div class="header-top-right">
+                            <ul>
+                                <li class="welcome header-right-item">Welcome to KuteShop</li>
+                                <li class="account header-right-item"><a href="">My Account</a></li>
+                                <li class="about header-right-item"><a href="">About us</a></li>
+                                <li class="support header-right-item"><a href="">Support</a></li>
+                            </ul>
+                        </div> <!--top-right-->
+                    </div>
+                </div>
+            </div>
+        </div><!--header-top-->
+        <div class="header-logo">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4 col-xs-12">
+                        <div class="search">
+                            <input class="search-text" type="text" placeholder="I'm searching for">
+                            <i class="fa fa-search search-icon" aria-hidden="true"></i>
+                        </div> <!--search-->
+                    </div>
+                    <div class="col-sm-4 col-xs-12">
+                        <div class="logo">
+                            <img class="logo-image" src="images/logo.png" alt="">
+                        </div> <!--logo-->
+                    </div>
+                    <div class="col-sm-4 col-xs-4">
+                        <div class="status">
+                            <div class="shopping status-item">
+                                <a href="" class="shopping-dropdown">
+                                    <img src="images/shopping.png" alt="" class="shoppong-icon">
+                                </a>
+                            </div>
+                            <div class="favorite status-item">
+                                <a href="" class="favorite-dropdown">
+                                    <img src="images/favorite.png" alt="" class="favourite-icon">
+                                </a>
+                            </div>
+                            <div class="compare status-item">
+                                <a href="" class="compare-dropdown">
+                                    <img src="images/compare.png" alt="" class="compare-icon">
+                                </a>
+                            </div>
+                        </div> <!--status-->
+                    </div>
+                </div>
+            </div>
+        </div><!--header-logo-->
+        <nav class=" header-nav navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <div class="nav-fashion header-left-item dropdown">
+                        <button id="dLabel-nav-header" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-bars dropdownMenu-icon" aria-hidden="true"></i>
+                        </button>
+                        <div class="nav-header-desc dropdown-menu" aria-labelledby="dLabel-nav-header">
+                            <span><a href="">...</a></span>
+                            <span><a href="">...</a></span>
+                        </div>
+                    </div>
+                    <a href="" class="nav-home">Home</a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="nav-fashion header-left-item dropdown">
+                            <button id="dLabel-nav-fashion" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Fashion
+                                <i class="fa fa-angle-down nav-drop__link" aria-hidden="true"></i>
+                            </button>
+                            <div class="nav-fashion-desc dropdown-menu" aria-labelledby="dLabel-nav-fashion">
+                                <span><a href="">...</a></span>
+                                <span><a href="">...</a></span>
+                            </div>
+                        </li>
+                        <li class="nav-sports header-left-item dropdown">
+                            <button id="dLabel-nav-sports" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Sports
+                                <i class="fa fa-angle-down nav-drop__link" aria-hidden="true"></i>
+                            </button>
+                            <div class="nav-sports-desc dropdown-menu" aria-labelledby="dLabel-nav-sports">
+                                <span><a href="">...</a></span>
+                                <span><a href="">...</a></span>
+                            </div>
+                        </li>
+                        <li class="nav-electronics header-left-item dropdown">
+                            <button id="dLabel-nav-electronics" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Electronics
+                                <i class="fa fa-angle-down nav-drop__link" aria-hidden="true"></i>
+                            </button>
+                            <div class="nav-electronics-desc dropdown-menu" aria-labelledby="dLabel-nav-electronics">
+                                <span><a href="">...</a></span>
+                                <span><a href="">...</a></span>
+                            </div>
+                        </li>
+                        <li class="nav-digital header-left-item dropdown">
+                            <button id="dLabel-nav-digital" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Digital
+                                <i class="fa fa-angle-down nav-drop__link" aria-hidden="true"></i>
+                            </button>
+                            <div class="nav-digital-desc dropdown-menu" aria-labelledby="dLabel-nav-digital">
+                                <span><a href="">...</a></span>
+                                <span><a href="">...</a></span>
+                            </div>
+                        </li>
+                        <li class="nav-digital header-left-item dropdown">
+                            <button id="dLabel-nav-furniture" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Furniture
+                                <i class="fa fa-angle-down nav-drop__link" aria-hidden="true"></i>
+                            </button>
+                            <div class="nav-furniture-desc dropdown-menu" aria-labelledby="dLabel-nav-furniture">
+                                <span><a href="">...</a></span>
+                                <span><a href="">...</a></span>
+                            </div>
+                        </li>
+                        <li class="nav-jewelry header-left-item dropdown">
+                            <button id="dLabel-nav-jewelry" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Jewelry
+                                <i class="fa fa-angle-down nav-drop__link" aria-hidden="true"></i>
+                            </button>
+                            <div class="nav-jewelry-desc dropdown-menu" aria-labelledby="dLabel-nav-jewelry">
+                                <span><a href="">...</a></span>
+                                <span><a href="">...</a></span>
+                            </div>
+                        </li>
+                        <li class="nav-item"><a href="" class="nav-item__link">Blog</a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+    </header>
+    <main>
+        <section class="banner">
+            <div class="container">
+                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <img src="images/banner0.jpg" alt="" class="banner__img">
+                        </div>
+                        <div class="item">
+                            <img src="images/banner0.jpg" alt="" class="banner__img">
+                        </div>
+                        <div class="item">
+                            <img src="images/banner0.jpg" alt="" class="banner__img">
+                        </div>
+                    </div>
+                    <!-- Controls -->
+                    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div> <!--banner-->
+        </section>
+        <section class="latestDeals">
+            <div class="container">
+                <header class="latest-deal-header">
+                    <h2 class="latest-deal__title ">Latest deals</h2>
+                    <div class="latest-deal-countdown pull-right visible-sm visible-md visible-lg">
+                        <span class="countdown__title"><img src="images/clock.png" alt=""> Ends in</span>
+                        <ul class="countdown-list-times pull-right">
+                            <li class="item-times">12 Days</li>
+                            <li class="item-times">25 Hrs</li>
+                            <li class="item-times">56 Mins</li>
+                            <li class="item-times">06 Secs</li>
+                        </ul>
+                    </div>
+                </header>
+                <div class="latestDeals-desc">
+                  <div class="latestDeals-item">
+                        <div class="item__img">
+                            <img src="images/latestDeals.png" alt="deal" class="img-responsive img--position">
+                            <div class="item__hover"></div>
+                            <div class="add-cart">
+                                <button type="submit" class="add-cart__btn"><i
+                                        class="fa fa-shopping-cart"></i>
+                                </button>
+                                <span class="add-cart__title">Add to cart</span>
+                            </div><!--end .add-cart-->
+                            <div class="another-choice">
+                                <a href="#" class="another-choice__link"><i
+                                        class="fa fa-search"></i></a>
+                                <a href="#" class="another-choice__link"><i class="fa fa-heart"></i></a>
+                            </div><!--end .another-->
+                        </div><!--end .item-img-->
+                        <a href="#" class="item-deal__link"></a>
+                        <div class="item-info product-info">
+                            <a href="#" class="item-info__title">Maecenas Consequat Mauris</a>
+                            <span class="item-info__price">$38.95</span>
+                            <span class="item-info__price-old">$52.00</span>
+                        </div><!--end .item-info-->
+                    </div>
+                    <div class="latestDeals-item">
+                          <div class="item__img">
+                              <img src="images/latestDeals.png" alt="deal" class="img-responsive img--position">
+                              <div class="item__hover"></div>
+                              <div class="add-cart">
+                                  <button type="submit" class="add-cart__btn"><i
+                                          class="fa fa-shopping-cart"></i>
+                                  </button>
+                                  <span class="add-cart__title">Add to cart</span>
+                              </div><!--end .add-cart-->
+                              <div class="another-choice">
+                                  <a href="#" class="another-choice__link"><i
+                                          class="fa fa-search"></i></a>
+                                  <a href="#" class="another-choice__link"><i class="fa fa-heart"></i></a>
+                              </div><!--end .another-->
+                          </div><!--end .item-img-->
+                          <a href="#" class="item-deal__link"></a>
+                          <div class="item-info product-info">
+                              <a href="#" class="item-info__title">Maecenas Consequat Mauris</a>
+                              <span class="item-info__price">$38.95</span>
+                              <span class="item-info__price-old">$52.00</span>
+                          </div><!--end .item-info-->
+                      </div>
+                      <div class="latestDeals-item">
+                            <div class="item__img">
+                                <img src="images/latestDeals.png" alt="deal" class="img-responsive img--position">
+                                <div class="item__hover"></div>
+                                <div class="add-cart">
+                                    <button type="submit" class="add-cart__btn"><i
+                                            class="fa fa-shopping-cart"></i>
+                                    </button>
+                                    <span class="add-cart__title">Add to cart</span>
+                                </div><!--end .add-cart-->
+                                <div class="another-choice">
+                                    <a href="#" class="another-choice__link"><i class="fa fa-search"></i></a>
+                                    <a href="#" class="another-choice__link"><i class="fa fa-heart"></i></a>
+                                </div><!--end .another-->
+                            </div><!--end .item-img-->
+                            <a href="#" class="item-deal__link"></a>
+                            <div class="item-info product-info">
+                                <a href="#" class="item-info__title">Maecenas Consequat Mauris</a>
+                                <span class="item-info__price">$38.95</span>
+                                <span class="item-info__price-old">$52.00</span>
+                            </div><!--end .item-info-->
+                        </div>
+                        <div class="latestDeals-item">
+                              <div class="item__img">
+                                  <img src="images/latestDeals.png" alt="deal" class="img-responsive img--position">
+                                  <div class="item__hover"></div>
+                                  <div class="add-cart">
+                                      <button type="submit" class="add-cart__btn"><i
+                                              class="fa fa-shopping-cart"></i>
+                                      </button>
+                                      <span class="add-cart__title">Add to cart</span>
+                                  </div><!--end .add-cart-->
+                                  <div class="another-choice">
+                                      <a href="#" class="another-choice__link"><i
+                                              class="fa fa-search"></i></a>
+                                      <a href="#" class="another-choice__link"><i class="fa fa-heart"></i></a>
+                                  </div><!--end .another-->
+                              </div><!--end .item-img-->
+                              <a href="#" class="item-deal__link"></a>
+                              <div class="item-info product-info">
+                                  <a href="#" class="item-info__title">Maecenas Consequat Mauris</a>
+                                  <span class="item-info__price">$38.95</span>
+                                  <span class="item-info__price-old">$52.00</span>
+                              </div><!--end .item-info-->
+                          </div>
+                          <div class="latestDeals-item">
+                                <div class="item__img">
+                                    <img src="images/latestDeals.png" alt="deal" class="img-responsive img--position">
+                                    <div class="item__hover"></div>
+                                    <div class="add-cart">
+                                        <button type="submit" class="add-cart__btn"><i
+                                                class="fa fa-shopping-cart"></i>
+                                        </button>
+                                        <span class="add-cart__title">Add to cart</span>
+                                    </div><!--end .add-cart-->
+                                    <div class="another-choice">
+                                        <a href="#" class="another-choice__link"><i
+                                                class="fa fa-search"></i></a>
+                                        <a href="#" class="another-choice__link"><i class="fa fa-heart"></i></a>
+                                    </div><!--end .another-->
+                                </div><!--end .item-img-->
+                                <a href="#" class="item-deal__link"></a>
+                                <div class="item-info product-info">
+                                    <a href="#" class="item-info__title">Maecenas Consequat Mauris</a>
+                                    <span class="item-info__price">$38.95</span>
+                                    <span class="item-info__price-old">$52.00</span>
+                                </div><!--end .item-info-->
+                            </div>
+                </div>
+            </div>
+        </section>
+        <section class="ads">
+            <div class="container">
+                <div class="row row-product">
+                    <div class="col-xs-12 col-sm-6 col-md-6">
+                        <div class="ads-img__left">
+                            <a href="#" class="ads-img__link"><img src="images/latestDeals-img.jpg" class="img-responsive"></a>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6">
+                        <div class="ads-img__right">
+                            <a href="#" class="ads-img__link"><img src="images/latestDeals-img.jpg" class="img-responsive"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section><!--end home-ads-->
+        <section class="fashion category-wrap">
+            <div class="container">
+              <div class="section-wrapper">
+                  <header class="cate-header cate-border--fashion">
+                      <div class="row row-header">
+                          <div class="col-md-2">
+                              <div class="cate-header-title header--fashion">
+                                  <h2 class="cate__title">Fashion</h2>
+                                  <i class="fa fa-angle-right"></i>
+                              </div>
+                          </div><!--end .header-title-->
+                          <div class="col-md-8">
+                              <ul class="nav nav-tabs tab-header tab--fashion">
+                                  <li class="active item-tab item-tab--fashion"><a data-toggle="tab" class="item-tab__link" href="#fashion">Best salers</a></li>
+                                  <li class="item-tab item-tab--fashion"><a data-toggle="tab" class="item-tab__link" href="#fashion1">Specials</a></li>
+                                  <li class="item-tab item-tab--fashion"><a data-toggle="tab" class="item-tab__link" href="#fashion2">New Arrivals</a></li>
+                                  <li class="item-tab item-tab--fashion"><a data-toggle="tab" class="item-tab__link" href="#fashion3">Most Reviews</a></li>
+                              </ul><!--end .tab-header-->
+                          </div>
+                      </div>
+                      <div class="dropdown dropdown-cate visible-sm visible-xs">
+                          <button class="btn dropdown-toggle btn-dropdown header--fashion" type="button" data-toggle="dropdown"> Categories
+                              <span class="caret"></span></button>
+                          <ul class="dropdown-menu">
+                              <li class="item-cate"><a href="#" class=" item-cate__link item-cate--fashion">Summer Dresses</a></li>
+                              <li class="item-cate"><a href="#" class="item-cate__link item-cate--fashion">Casual Dresses</a></li>
+                              <li class="item-cate"><a href="#" class="item-cate__link item-cate--fashion">Blouses</a></li>
+                              <li class="item-cate"><a href="#" class="item-cate__link item-cate--fashion">Skirts</a></li>
+                              <li class="item-cate"><a href="#" class="item-cate__link item-cate--fashion">Jumpsuits</a></li>
+                              <li class="item-cate"><a href="#" class="item-cate__link item-cate--fashion">T-Shirts</a></li>
+                              <li class="item-cate"><a href="#" class="item-cate__link item-cate--fashion">Jackets</a></li>
+                              <li class="item-cate"><a href="#" class="item-cate__link item-cate--fashion">Bikinis</a></li>
+                              <li class="item-cate"><a href="#" class="item-cate__link item-cate--fashion">Sunglasses</a>
+                              </li>
+                          </ul>
+                      </div>
+                  </header><!--end .header-section-->
+                  <div class="row row-main">
+                      <div class="col-md-2 visible-md visible-lg">
+                          <ul class="sidebar">
+                              <li class="item-cate"><a href="#" class=" item-cate__link item-cate--fashion">Summer Dresses</a></li>
+                              <li class="item-cate"><a href="#" class="item-cate__link item-cate--fashion">CasualDresses</a></li>
+                              <li class="item-cate"><a href="#" class="item-cate__link item-cate--fashion">Blouses</a></li>
+                              <li class="item-cate"><a href="#" class="item-cate__link item-cate--fashion">Skirts</a></li>
+                              <li class="item-cate"><a href="#" class="item-cate__link item-cate--fashion">Jumpsuits</a></li>
+                              <li class="item-cate"><a href="#" class="item-cate__link item-cate--fashion">T-Shirts</a></li>
+                              <li class="item-cate"><a href="#" class="item-cate__link item-cate--fashion">Jackets</a></li>
+                              <li class="item-cate"><a href="#" class="item-cate__link item-cate--fashion">Bikinis</a></li>
+                              <li class="item-cate"><a href="#" class="item-cate__link item-cate--fashion">Sunglasses</a></li>
+                          </ul><!--end sidebar-->
+                      </div>
+                      <div class="col-md-10 tab-content">
+                          <div id="fashion" class="tab-pane fade in active  ">
+                              <div class="row row-product">
+                                  <div class="col-md-5 col-xs-12 banner-section">
+                                      <div  class="carousel slide" data-ride="carousel">
+                                          <!-- Indicators -->
+                                          <ol class="carousel-indicators">
+                                              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                              <li data-target="#myCarousel" data-slide-to="1"></li>
+                                              <li data-target="#myCarousel" data-slide-to="2"></li>
+                                          </ol>
+
+                                          <!-- Wrapper for slides -->
+                                          <div class="carousel-inner">
+                                              <div class="item item--slide active">
+                                                  <a href="#" class="banner-section__link"></a>
+                                                  <img src="images/fashion0.jpg" alt="banner-fashion" class="img-responsive img--size">
+                                                  <div class="banner-info">
+                                                      <div class="banner-info--position">
+                                                          <div class="banner-info--bg"></div>
+                                                          <h3 class="banner-info__title">Fashion</h3>
+                                                          <span class="banner-info__collect">Summer collection</span>
+                                                          <a href="#" class="banner-shopnow">Shop now</a>
+                                                          <p class="banner-info__gener">Generations</p>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                               <div class="item item--slide">
+                                                  <a href="#" class="banner-section__link"></a>
+                                                  <img src="images/fashion0.jpg" alt="banner-fashion" class="img-responsive img--size">
+                                                  <div class="banner-info">
+                                                      <div class="banner-info--position">
+                                                          <div class="banner-info--bg"></div>
+                                                          <h3 class="banner-info__title">Fashion</h3>
+                                                          <span class="banner-info__collect">Summer collection</span>
+                                                          <a href="#" class="banner-shopnow">Shop now</a>
+                                                          <p class="banner-info__gener">Generations</p>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                               <div class="item item--slide">
+                                                  <a href="#" class="banner-section__link"></a>
+                                                  <img src="images/fashion0.jpg" alt="banner-fashion" class="img-responsive img--size">
+                                                  <div class="banner-info">
+                                                      <div class="banner-info--position">
+                                                          <div class="banner-info--bg"></div>
+                                                          <h3 class="banner-info__title">Fashion</h3>
+                                                          <span class="banner-info__collect">Summer collection</span>
+                                                          <a href="#" class="banner-shopnow">Shop now</a>
+                                                          <p class="banner-info__gener">Generations</p>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div><!-- banner-section-->
+                                  <div class="col-md-7 col-xs-12 product-section">
+                                      <div class="row row-product">
+                                          <div class="col-xs-6 col-sm-4 col-md-4">
+                                              <div class="item-product">
+                                                  <a href="#" class="item-deal__link"></a>
+                                                  <div class="item-info product-info">
+                                                      <a href="#" class="item-info__title">Headphone & earphone</a>
+                                                      <span class="item-info__price">$38.95</span>
+                                                      <span class="item-info__price--old">$52.00</span>
+                                                  </div><!--end .item-info-->
+                                                  <div class="item-img">
+                                                      <img src="images/fashion1.jpg" alt="deal" class="img-responsive">
+                                                      <div class="item__hover"></div>
+                                                      <div class="add-cart">
+                                                          <button type="submit" class="add-cart__btn"><i
+                                                                  class="fa fa-shopping-cart"></i>
+                                                          </button>
+                                                          <span class="add-cart__title">Add to cart</span>
+                                                      </div><!--end .add-cart-->
+                                                      <div class="another-choice">
+                                                          <a href="#" class="another-choice__link"><i
+                                                                  class="fa fa-search"></i></a>
+                                                          <a href="#" class="another-choice__link"><i class="fa fa-heart"></i></a>
+                                                      </div><!--end .another-->
+                                                  </div><!--end .item-img-->
+                                              </div><!--end .item-product-->
+                                          </div>
+                                          <div class="col-xs-6 col-sm-4 col-md-4">
+                                              <div class="item-product">
+                                                  <a href="#" class="item-deal__link"></a>
+                                                  <div class="item-info product-info">
+                                                      <a href="#" class="item-info__title">Headphone & earphone</a>
+                                                      <span class="item-info__price">$38.95</span>
+                                                      <span class="item-info__price--old">$52.00</span>
+                                                  </div><!--end .item-info-->
+                                                  <div class="item-img">
+                                                      <img src="images/fashion1.jpg" alt="deal" class="img-responsive">
+                                                      <div class="item__hover"></div>
+                                                      <div class="add-cart">
+                                                          <button type="submit" class="add-cart__btn"><i class="fa fa-shopping-cart"></i>
+                                                          </button>
+                                                          <span class="add-cart__title">Add to cart</span>
+                                                      </div><!--end .add-cart-->
+                                                      <div class="another-choice">
+                                                          <a href="#" class="another-choice__link"><i class="fa fa-search"></i></a>
+                                                          <a href="#" class="another-choice__link"><i class="fa fa-heart"></i></a>
+                                                      </div><!--end .another-->
+                                                  </div><!--end .item-img-->
+                                              </div><!--end .item-product-->
+                                          </div>
+                                          <div class="col-xs-6 col-sm-4 col-md-4">
+                                              <div class="item-product">
+                                                  <a href="#" class="item-deal__link"></a>
+                                                  <div class="item-info product-info">
+                                                      <a href="#" class="item-info__title">Headphone & earphone</a>
+                                                      <span class="item-info__price">$38.95</span>
+                                                      <span class="item-info__price--old">$52.00</span>
+                                                  </div><!--end .item-info-->
+                                                  <div class="item-img">
+                                                      <img src="images/fashion1.jpg" alt="deal" class="img-responsive">
+                                                      <div class="item__hover"></div>
+                                                      <div class="add-cart">
+                                                          <button type="submit" class="add-cart__btn"><i class="fa fa-shopping-cart"></i>
+                                                          </button>
+                                                          <span class="add-cart__title">Add to cart</span>
+                                                      </div><!--end .add-cart-->
+                                                      <div class="another-choice">
+                                                          <a href="#" class="another-choice__link"><i class="fa fa-search"></i></a>
+                                                          <a href="#" class="another-choice__link"><i class="fa fa-heart"></i></a>
+                                                      </div><!--end .another-->
+                                                  </div><!--end .item-img-->
+                                              </div><!--end .item-product-->
+                                          </div>
+                                          <div class="col-xs-6 col-sm-4 col-md-4">
+                                              <div class="item-product">
+                                                  <a href="#" class="item-deal__link"></a>
+                                                  <div class="item-info product-info">
+                                                      <a href="#" class="item-info__title">Headphone & earphone</a>
+                                                      <span class="item-info__price">$38.95</span>
+                                                      <span class="item-info__price--old">$52.00</span>
+                                                  </div><!--end .item-info-->
+                                                  <div class="item-img">
+                                                      <img src="images/fashion1.jpg" alt="deal" class="img-responsive">
+                                                      <div class="item__hover"></div>
+                                                      <div class="add-cart">
+                                                          <button type="submit" class="add-cart__btn"><i class="fa fa-shopping-cart"></i>
+                                                          </button>
+                                                          <span class="add-cart__title">Add to cart</span>
+                                                      </div><!--end .add-cart-->
+                                                      <div class="another-choice">
+                                                          <a href="#" class="another-choice__link"><i class="fa fa-search"></i></a>
+                                                          <a href="#" class="another-choice__link"><i class="fa fa-heart"></i></a>
+                                                      </div><!--end .another-->
+                                                  </div><!--end .item-img-->
+                                              </div><!--end .item-product-->
+                                          </div>
+                                          <div class="col-xs-6 col-sm-4 col-md-4">
+                                              <div class="item-product">
+                                                  <a href="#" class="item-deal__link"></a>
+                                                  <div class="item-info product-info">
+                                                      <a href="#" class="item-info__title">Headphone & earphone</a>
+                                                      <span class="item-info__price">$38.95</span>
+                                                      <span class="item-info__price--old">$52.00</span>
+                                                  </div><!--end .item-info-->
+                                                  <div class="item-img">
+                                                      <img src="images/fashion1.jpg" alt="deal" class="img-responsive">
+                                                      <div class="item__hover"></div>
+                                                      <div class="add-cart">
+                                                          <button type="submit" class="add-cart__btn"><i class="fa fa-shopping-cart"></i></button>
+                                                          <span class="add-cart__title">Add to cart</span>
+                                                      </div><!--end .add-cart-->
+                                                      <div class="another-choice">
+                                                          <a href="#" class="another-choice__link"><i class="fa fa-search"></i></a>
+                                                          <a href="#" class="another-choice__link"><i class="fa fa-heart"></i></a>
+                                                      </div><!--end .another-->
+                                                  </div><!--end .item-img-->
+                                              </div><!--end .item-product-->
+                                          </div>
+                                          <div class="col-xs-6 col-sm-4 col-md-4">
+                                              <div class="item-product">
+                                                  <a href="#" class="item-deal__link"></a>
+                                                  <div class="item-info product-info">
+                                                      <a href="#" class="item-info__title">Headphone & earphone</a>
+                                                      <span class="item-info__price">$38.95</span>
+                                                      <span class="item-info__price--old">$52.00</span>
+                                                  </div><!--end .item-info-->
+                                                  <div class="item-img">
+                                                      <img src="images/fashion1.jpg" alt="deal" class="img-responsive">
+                                                      <div class="item__hover"></div>
+                                                      <div class="add-cart">
+                                                          <button type="submit" class="add-cart__btn"><i class="fa fa-shopping-cart"></i></button>
+                                                          <span class="add-cart__title">Add to cart</span>
+                                                      </div><!--end .add-cart-->
+                                                      <div class="another-choice">
+                                                          <a href="#" class="another-choice__link"><i class="fa fa-search"></i></a>
+                                                          <a href="#" class="another-choice__link"><i class="fa fa-heart"></i></a>
+                                                      </div><!--end .another-->
+                                                  </div><!--end .item-img-->
+                                              </div><!--end .item-product-->
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div id="fashion1" class="tab-pane fade  ">
+                            <div class="row row-product">
+                                <div class="col-md-5 col-xs-12 banner-section">
+                                    <div  class="carousel slide" data-ride="carousel">
+                                        <!-- Indicators -->
+                                        <ol class="carousel-indicators">
+                                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                                            <li data-target="#myCarousel" data-slide-to="2"></li>
+                                        </ol>
+
+                                        <!-- Wrapper for slides -->
+                                        <div class="carousel-inner">
+                                            <div class="item item--slide active">
+                                                <a href="#" class="banner-section__link"></a>
+                                                <img src="images/fashion0.jpg" alt="banner-fashion" class="img-responsive img--size">
+                                                <div class="banner-info">
+                                                    <div class="banner-info--position">
+                                                        <div class="banner-info--bg"></div>
+                                                        <h3 class="banner-info__title">Fashion</h3>
+                                                        <span class="banner-info__collect">Summer collection</span>
+                                                        <a href="#" class="banner-shopnow">Shop now</a>
+                                                        <p class="banner-info__gener">Generations</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                             <div class="item item--slide">
+                                                <a href="#" class="banner-section__link"></a>
+                                                <img src="images/fashion0.jpg" alt="banner-fashion" class="img-responsive img--size">
+                                                <div class="banner-info">
+                                                    <div class="banner-info--position">
+                                                        <div class="banner-info--bg"></div>
+                                                        <h3 class="banner-info__title">Fashion</h3>
+                                                        <span class="banner-info__collect">Summer collection</span>
+                                                        <a href="#" class="banner-shopnow">Shop now</a>
+                                                        <p class="banner-info__gener">Generations</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                             <div class="item item--slide">
+                                                <a href="#" class="banner-section__link"></a>
+                                                <img src="images/fashion0.jpg" alt="banner-fashion" class="img-responsive img--size">
+                                                <div class="banner-info">
+                                                    <div class="banner-info--position">
+                                                        <div class="banner-info--bg"></div>
+                                                        <h3 class="banner-info__title">Fashion</h3>
+                                                        <span class="banner-info__collect">Summer collection</span>
+                                                        <a href="#" class="banner-shopnow">Shop now</a>
+                                                        <p class="banner-info__gener">Generations</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!-- banner-section-->
+                                <div class="col-md-7 col-xs-12 product-section">
+                                    <div class="row row-product">
+                                        <div class="col-xs-6 col-sm-4 col-md-4">
+                                            <div class="item-product">
+                                                <a href="#" class="item-deal__link"></a>
+                                                <div class="item-info product-info">
+                                                    <a href="#" class="item-info__title">Headphone & earphone</a>
+                                                    <span class="item-info__price">$38.95</span>
+                                                    <span class="item-info__price--old">$52.00</span>
+                                                </div><!--end .item-info-->
+                                                <div class="item-img">
+                                                    <img src="images/fashion1.jpg" alt="deal" class="img-responsive">
+                                                    <div class="item__hover"></div>
+                                                    <div class="add-cart">
+                                                        <button type="submit" class="add-cart__btn"><i
+                                                                class="fa fa-shopping-cart"></i>
+                                                        </button>
+                                                        <span class="add-cart__title">Add to cart</span>
+                                                    </div><!--end .add-cart-->
+                                                    <div class="another-choice">
+                                                        <a href="#" class="another-choice__link"><i
+                                                                class="fa fa-search"></i></a>
+                                                        <a href="#" class="another-choice__link"><i class="fa fa-heart"></i></a>
+                                                    </div><!--end .another-->
+                                                </div><!--end .item-img-->
+                                            </div><!--end .item-product-->
+                                        </div>
+                                        <div class="col-xs-6 col-sm-4 col-md-4">
+                                            <div class="item-product">
+                                                <a href="#" class="item-deal__link"></a>
+                                                <div class="item-info product-info">
+                                                    <a href="#" class="item-info__title">Headphone & earphone</a>
+                                                    <span class="item-info__price">$38.95</span>
+                                                    <span class="item-info__price--old">$52.00</span>
+                                                </div><!--end .item-info-->
+                                                <div class="item-img">
+                                                    <img src="images/fashion1.jpg" alt="deal" class="img-responsive">
+                                                    <div class="item__hover"></div>
+                                                    <div class="add-cart">
+                                                        <button type="submit" class="add-cart__btn"><i class="fa fa-shopping-cart"></i>
+                                                        </button>
+                                                        <span class="add-cart__title">Add to cart</span>
+                                                    </div><!--end .add-cart-->
+                                                    <div class="another-choice">
+                                                        <a href="#" class="another-choice__link"><i class="fa fa-search"></i></a>
+                                                        <a href="#" class="another-choice__link"><i class="fa fa-heart"></i></a>
+                                                    </div><!--end .another-->
+                                                </div><!--end .item-img-->
+                                            </div><!--end .item-product-->
+                                        </div>
+                                        <div class="col-xs-6 col-sm-4 col-md-4">
+                                            <div class="item-product">
+                                                <a href="#" class="item-deal__link"></a>
+                                                <div class="item-info product-info">
+                                                    <a href="#" class="item-info__title">Headphone & earphone</a>
+                                                    <span class="item-info__price">$38.95</span>
+                                                    <span class="item-info__price--old">$52.00</span>
+                                                </div><!--end .item-info-->
+                                                <div class="item-img">
+                                                    <img src="images/fashion1.jpg" alt="deal" class="img-responsive">
+                                                    <div class="item__hover"></div>
+                                                    <div class="add-cart">
+                                                        <button type="submit" class="add-cart__btn"><i class="fa fa-shopping-cart"></i>
+                                                        </button>
+                                                        <span class="add-cart__title">Add to cart</span>
+                                                    </div><!--end .add-cart-->
+                                                    <div class="another-choice">
+                                                        <a href="#" class="another-choice__link"><i class="fa fa-search"></i></a>
+                                                        <a href="#" class="another-choice__link"><i class="fa fa-heart"></i></a>
+                                                    </div><!--end .another-->
+                                                </div><!--end .item-img-->
+                                            </div><!--end .item-product-->
+                                        </div>
+                                        <div class="col-xs-6 col-sm-4 col-md-4">
+                                            <div class="item-product">
+                                                <a href="#" class="item-deal__link"></a>
+                                                <div class="item-info product-info">
+                                                    <a href="#" class="item-info__title">Headphone & earphone</a>
+                                                    <span class="item-info__price">$38.95</span>
+                                                    <span class="item-info__price--old">$52.00</span>
+                                                </div><!--end .item-info-->
+                                                <div class="item-img">
+                                                    <img src="images/fashion1.jpg" alt="deal" class="img-responsive">
+                                                    <div class="item__hover"></div>
+                                                    <div class="add-cart">
+                                                        <button type="submit" class="add-cart__btn"><i class="fa fa-shopping-cart"></i>
+                                                        </button>
+                                                        <span class="add-cart__title">Add to cart</span>
+                                                    </div><!--end .add-cart-->
+                                                    <div class="another-choice">
+                                                        <a href="#" class="another-choice__link"><i class="fa fa-search"></i></a>
+                                                        <a href="#" class="another-choice__link"><i class="fa fa-heart"></i></a>
+                                                    </div><!--end .another-->
+                                                </div><!--end .item-img-->
+                                            </div><!--end .item-product-->
+                                        </div>
+                                        <div class="col-xs-6 col-sm-4 col-md-4">
+                                            <div class="item-product">
+                                                <a href="#" class="item-deal__link"></a>
+                                                <div class="item-info product-info">
+                                                    <a href="#" class="item-info__title">Headphone & earphone</a>
+                                                    <span class="item-info__price">$38.95</span>
+                                                    <span class="item-info__price--old">$52.00</span>
+                                                </div><!--end .item-info-->
+                                                <div class="item-img">
+                                                    <img src="images/fashion1.jpg" alt="deal" class="img-responsive">
+                                                    <div class="item__hover"></div>
+                                                    <div class="add-cart">
+                                                        <button type="submit" class="add-cart__btn"><i class="fa fa-shopping-cart"></i></button>
+                                                        <span class="add-cart__title">Add to cart</span>
+                                                    </div><!--end .add-cart-->
+                                                    <div class="another-choice">
+                                                        <a href="#" class="another-choice__link"><i class="fa fa-search"></i></a>
+                                                        <a href="#" class="another-choice__link"><i class="fa fa-heart"></i></a>
+                                                    </div><!--end .another-->
+                                                </div><!--end .item-img-->
+                                            </div><!--end .item-product-->
+                                        </div>
+                                        <div class="col-xs-6 col-sm-4 col-md-4">
+                                            <div class="item-product">
+                                                <a href="#" class="item-deal__link"></a>
+                                                <div class="item-info product-info">
+                                                    <a href="#" class="item-info__title">Headphone & earphone</a>
+                                                    <span class="item-info__price">$38.95</span>
+                                                    <span class="item-info__price--old">$52.00</span>
+                                                </div><!--end .item-info-->
+                                                <div class="item-img">
+                                                    <img src="images/fashion1.jpg" alt="deal" class="img-responsive">
+                                                    <div class="item__hover"></div>
+                                                    <div class="add-cart">
+                                                        <button type="submit" class="add-cart__btn"><i class="fa fa-shopping-cart"></i></button>
+                                                        <span class="add-cart__title">Add to cart</span>
+                                                    </div><!--end .add-cart-->
+                                                    <div class="another-choice">
+                                                        <a href="#" class="another-choice__link"><i class="fa fa-search"></i></a>
+                                                        <a href="#" class="another-choice__link"><i class="fa fa-heart"></i></a>
+                                                    </div><!--end .another-->
+                                                </div><!--end .item-img-->
+                                            </div><!--end .item-product-->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+                          <div id="fashion2" class="tab-pane fade  ">
+                            <div class="row row-product">
+                                <div class="col-md-5 col-xs-12 banner-section">
+                                    <div  class="carousel slide" data-ride="carousel">
+                                        <!-- Indicators -->
+                                        <ol class="carousel-indicators">
+                                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                                            <li data-target="#myCarousel" data-slide-to="2"></li>
+                                        </ol>
+
+                                        <!-- Wrapper for slides -->
+                                        <div class="carousel-inner">
+                                            <div class="item item--slide active">
+                                                <a href="#" class="banner-section__link"></a>
+                                                <img src="images/fashion0.jpg" alt="banner-fashion" class="img-responsive img--size">
+                                                <div class="banner-info">
+                                                    <div class="banner-info--position">
+                                                        <div class="banner-info--bg"></div>
+                                                        <h3 class="banner-info__title">Fashion</h3>
+                                                        <span class="banner-info__collect">Summer collection</span>
+                                                        <a href="#" class="banner-shopnow">Shop now</a>
+                                                        <p class="banner-info__gener">Generations</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                             <div class="item item--slide">
+                                                <a href="#" class="banner-section__link"></a>
+                                                <img src="images/fashion0.jpg" alt="banner-fashion" class="img-responsive img--size">
+                                                <div class="banner-info">
+                                                    <div class="banner-info--position">
+                                                        <div class="banner-info--bg"></div>
+                                                        <h3 class="banner-info__title">Fashion</h3>
+                                                        <span class="banner-info__collect">Summer collection</span>
+                                                        <a href="#" class="banner-shopnow">Shop now</a>
+                                                        <p class="banner-info__gener">Generations</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                             <div class="item item--slide">
+                                                <a href="#" class="banner-section__link"></a>
+                                                <img src="images/fashion0.jpg" alt="banner-fashion" class="img-responsive img--size">
+                                                <div class="banner-info">
+                                                    <div class="banner-info--position">
+                                                        <div class="banner-info--bg"></div>
+                                                        <h3 class="banner-info__title">Fashion</h3>
+                                                        <span class="banner-info__collect">Summer collection</span>
+                                                        <a href="#" class="banner-shopnow">Shop now</a>
+                                                        <p class="banner-info__gener">Generations</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!-- banner-section-->
+                                <div class="col-md-7 col-xs-12 product-section">
+                                    <div class="row row-product">
+                                        <div class="col-xs-6 col-sm-4 col-md-4">
+                                            <div class="item-product">
+                                                <a href="#" class="item-deal__link"></a>
+                                                <div class="item-info product-info">
+                                                    <a href="#" class="item-info__title">Headphone & earphone</a>
+                                                    <span class="item-info__price">$38.95</span>
+                                                    <span class="item-info__price--old">$52.00</span>
+                                                </div><!--end .item-info-->
+                                                <div class="item-img">
+                                                    <img src="images/fashion1.jpg" alt="deal" class="img-responsive">
+                                                    <div class="item__hover"></div>
+                                                    <div class="add-cart">
+                                                        <button type="submit" class="add-cart__btn"><i
+                                                                class="fa fa-shopping-cart"></i>
+                                                        </button>
+                                                        <span class="add-cart__title">Add to cart</span>
+                                                    </div><!--end .add-cart-->
+                                                    <div class="another-choice">
+                                                        <a href="#" class="another-choice__link"><i
+                                                                class="fa fa-search"></i></a>
+                                                        <a href="#" class="another-choice__link"><i class="fa fa-heart"></i></a>
+                                                    </div><!--end .another-->
+                                                </div><!--end .item-img-->
+                                            </div><!--end .item-product-->
+                                        </div>
+                                        <div class="col-xs-6 col-sm-4 col-md-4">
+                                            <div class="item-product">
+                                                <a href="#" class="item-deal__link"></a>
+                                                <div class="item-info product-info">
+                                                    <a href="#" class="item-info__title">Headphone & earphone</a>
+                                                    <span class="item-info__price">$38.95</span>
+                                                    <span class="item-info__price--old">$52.00</span>
+                                                </div><!--end .item-info-->
+                                                <div class="item-img">
+                                                    <img src="images/fashion1.jpg" alt="deal" class="img-responsive">
+                                                    <div class="item__hover"></div>
+                                                    <div class="add-cart">
+                                                        <button type="submit" class="add-cart__btn"><i class="fa fa-shopping-cart"></i>
+                                                        </button>
+                                                        <span class="add-cart__title">Add to cart</span>
+                                                    </div><!--end .add-cart-->
+                                                    <div class="another-choice">
+                                                        <a href="#" class="another-choice__link"><i class="fa fa-search"></i></a>
+                                                        <a href="#" class="another-choice__link"><i class="fa fa-heart"></i></a>
+                                                    </div><!--end .another-->
+                                                </div><!--end .item-img-->
+                                            </div><!--end .item-product-->
+                                        </div>
+                                        <div class="col-xs-6 col-sm-4 col-md-4">
+                                            <div class="item-product">
+                                                <a href="#" class="item-deal__link"></a>
+                                                <div class="item-info product-info">
+                                                    <a href="#" class="item-info__title">Headphone & earphone</a>
+                                                    <span class="item-info__price">$38.95</span>
+                                                    <span class="item-info__price--old">$52.00</span>
+                                                </div><!--end .item-info-->
+                                                <div class="item-img">
+                                                    <img src="images/fashion1.jpg" alt="deal" class="img-responsive">
+                                                    <div class="item__hover"></div>
+                                                    <div class="add-cart">
+                                                        <button type="submit" class="add-cart__btn"><i class="fa fa-shopping-cart"></i>
+                                                        </button>
+                                                        <span class="add-cart__title">Add to cart</span>
+                                                    </div><!--end .add-cart-->
+                                                    <div class="another-choice">
+                                                        <a href="#" class="another-choice__link"><i class="fa fa-search"></i></a>
+                                                        <a href="#" class="another-choice__link"><i class="fa fa-heart"></i></a>
+                                                    </div><!--end .another-->
+                                                </div><!--end .item-img-->
+                                            </div><!--end .item-product-->
+                                        </div>
+                                        <div class="col-xs-6 col-sm-4 col-md-4">
+                                            <div class="item-product">
+                                                <a href="#" class="item-deal__link"></a>
+                                                <div class="item-info product-info">
+                                                    <a href="#" class="item-info__title">Headphone & earphone</a>
+                                                    <span class="item-info__price">$38.95</span>
+                                                    <span class="item-info__price--old">$52.00</span>
+                                                </div><!--end .item-info-->
+                                                <div class="item-img">
+                                                    <img src="images/fashion1.jpg" alt="deal" class="img-responsive">
+                                                    <div class="item__hover"></div>
+                                                    <div class="add-cart">
+                                                        <button type="submit" class="add-cart__btn"><i class="fa fa-shopping-cart"></i>
+                                                        </button>
+                                                        <span class="add-cart__title">Add to cart</span>
+                                                    </div><!--end .add-cart-->
+                                                    <div class="another-choice">
+                                                        <a href="#" class="another-choice__link"><i class="fa fa-search"></i></a>
+                                                        <a href="#" class="another-choice__link"><i class="fa fa-heart"></i></a>
+                                                    </div><!--end .another-->
+                                                </div><!--end .item-img-->
+                                            </div><!--end .item-product-->
+                                        </div>
+                                        <div class="col-xs-6 col-sm-4 col-md-4">
+                                            <div class="item-product">
+                                                <a href="#" class="item-deal__link"></a>
+                                                <div class="item-info product-info">
+                                                    <a href="#" class="item-info__title">Headphone & earphone</a>
+                                                    <span class="item-info__price">$38.95</span>
+                                                    <span class="item-info__price--old">$52.00</span>
+                                                </div><!--end .item-info-->
+                                                <div class="item-img">
+                                                    <img src="images/fashion1.jpg" alt="deal" class="img-responsive">
+                                                    <div class="item__hover"></div>
+                                                    <div class="add-cart">
+                                                        <button type="submit" class="add-cart__btn"><i class="fa fa-shopping-cart"></i></button>
+                                                        <span class="add-cart__title">Add to cart</span>
+                                                    </div><!--end .add-cart-->
+                                                    <div class="another-choice">
+                                                        <a href="#" class="another-choice__link"><i class="fa fa-search"></i></a>
+                                                        <a href="#" class="another-choice__link"><i class="fa fa-heart"></i></a>
+                                                    </div><!--end .another-->
+                                                </div><!--end .item-img-->
+                                            </div><!--end .item-product-->
+                                        </div>
+                                        <div class="col-xs-6 col-sm-4 col-md-4">
+                                            <div class="item-product">
+                                                <a href="#" class="item-deal__link"></a>
+                                                <div class="item-info product-info">
+                                                    <a href="#" class="item-info__title">Headphone & earphone</a>
+                                                    <span class="item-info__price">$38.95</span>
+                                                    <span class="item-info__price--old">$52.00</span>
+                                                </div><!--end .item-info-->
+                                                <div class="item-img">
+                                                    <img src="images/fashion1.jpg" alt="deal" class="img-responsive">
+                                                    <div class="item__hover"></div>
+                                                    <div class="add-cart">
+                                                        <button type="submit" class="add-cart__btn"><i class="fa fa-shopping-cart"></i></button>
+                                                        <span class="add-cart__title">Add to cart</span>
+                                                    </div><!--end .add-cart-->
+                                                    <div class="another-choice">
+                                                        <a href="#" class="another-choice__link"><i class="fa fa-search"></i></a>
+                                                        <a href="#" class="another-choice__link"><i class="fa fa-heart"></i></a>
+                                                    </div><!--end .another-->
+                                                </div><!--end .item-img-->
+                                            </div><!--end .item-product-->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+                          <div id="fashion3" class="tab-pane fade  ">
+                            <div class="row row-product">
+                                <div class="col-md-5 col-xs-12 banner-section">
+                                    <div  class="carousel slide" data-ride="carousel">
+                                        <!-- Indicators -->
+                                        <ol class="carousel-indicators">
+                                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                                            <li data-target="#myCarousel" data-slide-to="2"></li>
+                                        </ol>
+
+                                        <!-- Wrapper for slides -->
+                                        <div class="carousel-inner">
+                                            <div class="item item--slide active">
+                                                <a href="#" class="banner-section__link"></a>
+                                                <img src="images/fashion0.jpg" alt="banner-fashion" class="img-responsive img--size">
+                                                <div class="banner-info">
+                                                    <div class="banner-info--position">
+                                                        <div class="banner-info--bg"></div>
+                                                        <h3 class="banner-info__title">Fashion</h3>
+                                                        <span class="banner-info__collect">Summer collection</span>
+                                                        <a href="#" class="banner-shopnow">Shop now</a>
+                                                        <p class="banner-info__gener">Generations</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                             <div class="item item--slide">
+                                                <a href="#" class="banner-section__link"></a>
+                                                <img src="images/fashion0.jpg" alt="banner-fashion" class="img-responsive img--size">
+                                                <div class="banner-info">
+                                                    <div class="banner-info--position">
+                                                        <div class="banner-info--bg"></div>
+                                                        <h3 class="banner-info__title">Fashion</h3>
+                                                        <span class="banner-info__collect">Summer collection</span>
+                                                        <a href="#" class="banner-shopnow">Shop now</a>
+                                                        <p class="banner-info__gener">Generations</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                             <div class="item item--slide">
+                                                <a href="#" class="banner-section__link"></a>
+                                                <img src="images/fashion0.jpg" alt="banner-fashion" class="img-responsive img--size">
+                                                <div class="banner-info">
+                                                    <div class="banner-info--position">
+                                                        <div class="banner-info--bg"></div>
+                                                        <h3 class="banner-info__title">Fashion</h3>
+                                                        <span class="banner-info__collect">Summer collection</span>
+                                                        <a href="#" class="banner-shopnow">Shop now</a>
+                                                        <p class="banner-info__gener">Generations</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!-- banner-section-->
+                                <div class="col-md-7 col-xs-12 product-section">
+                                    <div class="row row-product">
+                                        <div class="col-xs-6 col-sm-4 col-md-4">
+                                            <div class="item-product">
+                                                <a href="#" class="item-deal__link"></a>
+                                                <div class="item-info product-info">
+                                                    <a href="#" class="item-info__title">Headphone & earphone</a>
+                                                    <span class="item-info__price">$38.95</span>
+                                                    <span class="item-info__price--old">$52.00</span>
+                                                </div><!--end .item-info-->
+                                                <div class="item-img">
+                                                    <img src="images/fashion1.jpg" alt="deal" class="img-responsive">
+                                                    <div class="item__hover"></div>
+                                                    <div class="add-cart">
+                                                        <button type="submit" class="add-cart__btn"><i
+                                                                class="fa fa-shopping-cart"></i>
+                                                        </button>
+                                                        <span class="add-cart__title">Add to cart</span>
+                                                    </div><!--end .add-cart-->
+                                                    <div class="another-choice">
+                                                        <a href="#" class="another-choice__link"><i
+                                                                class="fa fa-search"></i></a>
+                                                        <a href="#" class="another-choice__link"><i class="fa fa-heart"></i></a>
+                                                    </div><!--end .another-->
+                                                </div><!--end .item-img-->
+                                            </div><!--end .item-product-->
+                                        </div>
+                                        <div class="col-xs-6 col-sm-4 col-md-4">
+                                            <div class="item-product">
+                                                <a href="#" class="item-deal__link"></a>
+                                                <div class="item-info product-info">
+                                                    <a href="#" class="item-info__title">Headphone & earphone</a>
+                                                    <span class="item-info__price">$38.95</span>
+                                                    <span class="item-info__price--old">$52.00</span>
+                                                </div><!--end .item-info-->
+                                                <div class="item-img">
+                                                    <img src="images/fashion1.jpg" alt="deal" class="img-responsive">
+                                                    <div class="item__hover"></div>
+                                                    <div class="add-cart">
+                                                        <button type="submit" class="add-cart__btn"><i class="fa fa-shopping-cart"></i>
+                                                        </button>
+                                                        <span class="add-cart__title">Add to cart</span>
+                                                    </div><!--end .add-cart-->
+                                                    <div class="another-choice">
+                                                        <a href="#" class="another-choice__link"><i class="fa fa-search"></i></a>
+                                                        <a href="#" class="another-choice__link"><i class="fa fa-heart"></i></a>
+                                                    </div><!--end .another-->
+                                                </div><!--end .item-img-->
+                                            </div><!--end .item-product-->
+                                        </div>
+                                        <div class="col-xs-6 col-sm-4 col-md-4">
+                                            <div class="item-product">
+                                                <a href="#" class="item-deal__link"></a>
+                                                <div class="item-info product-info">
+                                                    <a href="#" class="item-info__title">Headphone & earphone</a>
+                                                    <span class="item-info__price">$38.95</span>
+                                                    <span class="item-info__price--old">$52.00</span>
+                                                </div><!--end .item-info-->
+                                                <div class="item-img">
+                                                    <img src="images/fashion1.jpg" alt="deal" class="img-responsive">
+                                                    <div class="item__hover"></div>
+                                                    <div class="add-cart">
+                                                        <button type="submit" class="add-cart__btn"><i class="fa fa-shopping-cart"></i>
+                                                        </button>
+                                                        <span class="add-cart__title">Add to cart</span>
+                                                    </div><!--end .add-cart-->
+                                                    <div class="another-choice">
+                                                        <a href="#" class="another-choice__link"><i class="fa fa-search"></i></a>
+                                                        <a href="#" class="another-choice__link"><i class="fa fa-heart"></i></a>
+                                                    </div><!--end .another-->
+                                                </div><!--end .item-img-->
+                                            </div><!--end .item-product-->
+                                        </div>
+                                        <div class="col-xs-6 col-sm-4 col-md-4">
+                                            <div class="item-product">
+                                                <a href="#" class="item-deal__link"></a>
+                                                <div class="item-info product-info">
+                                                    <a href="#" class="item-info__title">Headphone & earphone</a>
+                                                    <span class="item-info__price">$38.95</span>
+                                                    <span class="item-info__price--old">$52.00</span>
+                                                </div><!--end .item-info-->
+                                                <div class="item-img">
+                                                    <img src="images/fashion1.jpg" alt="deal" class="img-responsive">
+                                                    <div class="item__hover"></div>
+                                                    <div class="add-cart">
+                                                        <button type="submit" class="add-cart__btn"><i class="fa fa-shopping-cart"></i>
+                                                        </button>
+                                                        <span class="add-cart__title">Add to cart</span>
+                                                    </div><!--end .add-cart-->
+                                                    <div class="another-choice">
+                                                        <a href="#" class="another-choice__link"><i class="fa fa-search"></i></a>
+                                                        <a href="#" class="another-choice__link"><i class="fa fa-heart"></i></a>
+                                                    </div><!--end .another-->
+                                                </div><!--end .item-img-->
+                                            </div><!--end .item-product-->
+                                        </div>
+                                        <div class="col-xs-6 col-sm-4 col-md-4">
+                                            <div class="item-product">
+                                                <a href="#" class="item-deal__link"></a>
+                                                <div class="item-info product-info">
+                                                    <a href="#" class="item-info__title">Headphone & earphone</a>
+                                                    <span class="item-info__price">$38.95</span>
+                                                    <span class="item-info__price--old">$52.00</span>
+                                                </div><!--end .item-info-->
+                                                <div class="item-img">
+                                                    <img src="images/fashion1.jpg" alt="deal" class="img-responsive">
+                                                    <div class="item__hover"></div>
+                                                    <div class="add-cart">
+                                                        <button type="submit" class="add-cart__btn"><i class="fa fa-shopping-cart"></i></button>
+                                                        <span class="add-cart__title">Add to cart</span>
+                                                    </div><!--end .add-cart-->
+                                                    <div class="another-choice">
+                                                        <a href="#" class="another-choice__link"><i class="fa fa-search"></i></a>
+                                                        <a href="#" class="another-choice__link"><i class="fa fa-heart"></i></a>
+                                                    </div><!--end .another-->
+                                                </div><!--end .item-img-->
+                                            </div><!--end .item-product-->
+                                        </div>
+                                        <div class="col-xs-6 col-sm-4 col-md-4">
+                                            <div class="item-product">
+                                                <a href="#" class="item-deal__link"></a>
+                                                <div class="item-info product-info">
+                                                    <a href="#" class="item-info__title">Headphone & earphone</a>
+                                                    <span class="item-info__price">$38.95</span>
+                                                    <span class="item-info__price--old">$52.00</span>
+                                                </div><!--end .item-info-->
+                                                <div class="item-img">
+                                                    <img src="images/fashion1.jpg" alt="deal" class="img-responsive">
+                                                    <div class="item__hover"></div>
+                                                    <div class="add-cart">
+                                                        <button type="submit" class="add-cart__btn"><i class="fa fa-shopping-cart"></i></button>
+                                                        <span class="add-cart__title">Add to cart</span>
+                                                    </div><!--end .add-cart-->
+                                                    <div class="another-choice">
+                                                        <a href="#" class="another-choice__link"><i class="fa fa-search"></i></a>
+                                                        <a href="#" class="another-choice__link"><i class="fa fa-heart"></i></a>
+                                                    </div><!--end .another-->
+                                                </div><!--end .item-img-->
+                                            </div><!--end .item-product-->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+                      </div>
+                      </div>
+                  </div><!--end .main-section-->
+              </div>
+
+            </div>
+        </section>
+        <section class="sports category-wrap">
+          <div class="container">
+            <div class="section-wrapper">
+                <header class="cate-header cate-border--sports">
+                    <div class="row row-header">
+                        <div class="col-md-2">
+                            <div class="cate-header-title header--sports">
+                                <h2 class="cate__title">Sports</h2>
+                                <i class="fa fa-angle-right"></i>
+                            </div>
+                        </div><!--end .header-title-->
+                        <div class="col-md-8">
+                            <ul class="nav nav-tabs tab-header tab--sports">
+                                <li class="active item-tab item-tab--sports"><a data-toggle="tab" class="item-tab__link" href="#sports">Best salers</a></li>
+                                <li class="item-tab item-tab--sports"><a data-toggle="tab" class="item-tab__link" href="#sports1">Specials</a></li>
+                                <li class="item-tab item-tab--sports"><a data-toggle="tab" class="item-tab__link" href="#sports2">New Arrivals</a></li>
+                                <li class="item-tab item-tab--sports"><a data-toggle="tab" class="item-tab__link" href="#sports3">Most Reviews</a></li>
+                            </ul><!--end .tab-header-->
+                        </div>
+                    </div>
+                    <div class="dropdown dropdown-cate visible-sm visible-xs">
+                        <button class="btn dropdown-toggle btn-dropdown header--sports" type="button" data-toggle="dropdown"> Categories
+                            <span class="caret"></span></button>
+                        <ul class="dropdown-menu">
+                            <li class="item-cate"><a href="#" class=" item-cate__link item-cate--sports">Summer Dresses</a></li>
+                            <li class="item-cate"><a href="#" class="item-cate__link item-cate--sports">Casual Dresses</a></li>
+                            <li class="item-cate"><a href="#" class="item-cate__link item-cate--sports">Blouses</a></li>
+                            <li class="item-cate"><a href="#" class="item-cate__link item-cate--sports">Skirts</a></li>
+                            <li class="item-cate"><a href="#" class="item-cate__link item-cate--sports">Jumpsuits</a></li>
+                            <li class="item-cate"><a href="#" class="item-cate__link item-cate--sports">T-Shirts</a></li>
+                            <li class="item-cate"><a href="#" class="item-cate__link item-cate--sports">Jackets</a></li>
+                            <li class="item-cate"><a href="#" class="item-cate__link item-cate--sports">Bikinis</a></li>
+                            <li class="item-cate"><a href="#" class="item-cate__link item-cate--sports">Sunglasses</a>
+                            </li>
+                        </ul>
+                    </div>
+                </header><!--end .header-section-->
+                <div class="row row-main">
+                    <div class="col-md-2 visible-md visible-lg">
+                        <ul class="sidebar">
+                            <li class="item-cate"><a href="#" class=" item-cate__link item-cate--sports">Summer Dresses</a></li>
+                            <li class="item-cate"><a href="#" class="item-cate__link item-cate--sports">CasualDresses</a></li>
+                            <li class="item-cate"><a href="#" class="item-cate__link item-cate--sports">Blouses</a></li>
+                            <li class="item-cate"><a href="#" class="item-cate__link item-cate--sports">Skirts</a></li>
+                            <li class="item-cate"><a href="#" class="item-cate__link item-cate--sports">Jumpsuits</a></li>
+                            <li class="item-cate"><a href="#" class="item-cate__link item-cate--sports">T-Shirts</a></li>
+                            <li class="item-cate"><a href="#" class="item-cate__link item-cate--sports">Jackets</a></li>
+                            <li class="item-cate"><a href="#" class="item-cate__link item-cate--sports">Bikinis</a></li>
+                            <li class="item-cate"><a href="#" class="item-cate__link item-cate--sports">Sunglasses</a></li>
+                        </ul><!--end sidebar-->
+                    </div>
+                    <div class="col-md-10 tab-content">
+                        <div id="sports" class="tab-pane fade in active  ">
+                            <div class="row row-product">
+                                <div class="col-md-5 col-xs-12 banner-section">
+                                    <div  class="carousel slide" data-ride="carousel">
+                                        <!-- Indicators -->
+                                        <ol class="carousel-indicators">
+                                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                                            <li data-target="#myCarousel" data-slide-to="2"></li>
+                                        </ol>
+
+                                        <!-- Wrapper for slides -->
+                                        <div class="carousel-inner">
+                                            <div class="item item--slide active">
+                                                <a href="#" class="banner-section__link"></a>
+                                                <img src="images/sports0.jpg" alt="banner-sports" class="img-responsive img--size">
+                                                <div class="banner-info">
+                                                    <div class="banner-info--position">
+                                                        <div class="banner-info--bg"></div>
+                                                        <h3 class="banner-info__title">Sports</h3>
+                                                        <span class="banner-info__collect">Summer collection</span>
+                                                        <a href="#" class="banner-shopnow">Shop now</a>
+                                                        <p class="banner-info__gener">Generations</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                             <div class="item item--slide">
+                                                <a href="#" class="banner-section__link"></a>
+                                                <img src="images/sports0.jpg" alt="banner-sports" class="img-responsive img--size">
+                                                <div class="banner-info">
+                                                    <div class="banner-info--position">
+                                                        <div class="banner-info--bg"></div>
+                                                        <h3 class="banner-info__title">Sports</h3>
+                                                        <span class="banner-info__collect">Summer collection</span>
+                                                        <a href="#" class="banner-shopnow">Shop now</a>
+                                                        <p class="banner-info__gener">Generations</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                             <div class="item item--slide">
+                                                <a href="#" class="banner-section__link"></a>
+                                                <img src="images/sports0.jpg" alt="banner-sports" class="img-responsive img--size">
+                                                <div class="banner-info">
+                                                    <div class="banner-info--position">
+                                                        <div class="banner-info--bg"></div>
+                                                        <h3 class="banner-info__title">Sports</h3>
+                                                        <span class="banner-info__collect">Summer collection</span>
+                                                        <a href="#" class="banner-shopnow">Shop now</a>
+                                                        <p class="banner-info__gener">Generations</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!-- banner-section-->
+                                <div class="col-md-7 col-xs-12 product-section">
+                                    <div class="row row-product">
+                                        <div class="col-xs-6 col-sm-4 col-md-4">
+                                            <div class="item-product">
+                                                <a href="#" class="item-deal__link"></a>
+                                                <div class="item-info product-info">
+                                                    <a href="#" class="item-info__title">Headphone & earphone</a>
+                                                    <span class="item-info__price">$38.95</span>
+                                                    <span class="item-info__price--old">$52.00</span>
+                                                </div><!--end .item-info-->
+                                                <div class="item-img">
+                                                    <img src="images/sports1.jpg" alt="deal" class="img-responsive">
+                                                    <div class="item__hover"></div>
+                                                    <div class="add-cart">
+                                                        <button type="submit" class="add-cart__btn"><i
+                                                                class="fa fa-shopping-cart"></i>
+                                                        </button>
+                                                        <span class="add-cart__title">Add to cart</span>
+                                                    </div><!--end .add-cart-->
+                                                    <div class="another-choice">
+                                                        <a href="#" class="another-choice__link"><i
+                                                                class="fa fa-search"></i></a>
+                                                        <a href="#" class="another-choice__link"><i class="fa fa-heart"></i></a>
+                                                    </div><!--end .another-->
+                                                </div><!--end .item-img-->
+                                            </div><!--end .item-product-->
+                                        </div>
+                                        <div class="col-xs-6 col-sm-4 col-md-4">
+                                            <div class="item-product">
+                                                <a href="#" class="item-deal__link"></a>
+                                                <div class="item-info product-info">
+                                                    <a href="#" class="item-info__title">Headphone & earphone</a>
+                                                    <span class="item-info__price">$38.95</span>
+                                                    <span class="item-info__price--old">$52.00</span>
+                                                </div><!--end .item-info-->
+                                                <div class="item-img">
+                                                    <img src="images/sports1.jpg" alt="deal" class="img-responsive">
+                                                    <div class="item__hover"></div>
+                                                    <div class="add-cart">
+                                                        <button type="submit" class="add-cart__btn"><i class="fa fa-shopping-cart"></i>
+                                                        </button>
+                                                        <span class="add-cart__title">Add to cart</span>
+                                                    </div><!--end .add-cart-->
+                                                    <div class="another-choice">
+                                                        <a href="#" class="another-choice__link"><i class="fa fa-search"></i></a>
+                                                        <a href="#" class="another-choice__link"><i class="fa fa-heart"></i></a>
+                                                    </div><!--end .another-->
+                                                </div><!--end .item-img-->
+                                            </div><!--end .item-product-->
+                                        </div>
+                                        <div class="col-xs-6 col-sm-4 col-md-4">
+                                            <div class="item-product">
+                                                <a href="#" class="item-deal__link"></a>
+                                                <div class="item-info product-info">
+                                                    <a href="#" class="item-info__title">Headphone & earphone</a>
+                                                    <span class="item-info__price">$38.95</span>
+                                                    <span class="item-info__price--old">$52.00</span>
+                                                </div><!--end .item-info-->
+                                                <div class="item-img">
+                                                    <img src="images/sports1.jpg" alt="deal" class="img-responsive">
+                                                    <div class="item__hover"></div>
+                                                    <div class="add-cart">
+                                                        <button type="submit" class="add-cart__btn"><i class="fa fa-shopping-cart"></i>
+                                                        </button>
+                                                        <span class="add-cart__title">Add to cart</span>
+                                                    </div><!--end .add-cart-->
+                                                    <div class="another-choice">
+                                                        <a href="#" class="another-choice__link"><i class="fa fa-search"></i></a>
+                                                        <a href="#" class="another-choice__link"><i class="fa fa-heart"></i></a>
+                                                    </div><!--end .another-->
+                                                </div><!--end .item-img-->
+                                            </div><!--end .item-product-->
+                                        </div>
+                                        <div class="col-xs-6 col-sm-4 col-md-4">
+                                            <div class="item-product">
+                                                <a href="#" class="item-deal__link"></a>
+                                                <div class="item-info product-info">
+                                                    <a href="#" class="item-info__title">Headphone & earphone</a>
+                                                    <span class="item-info__price">$38.95</span>
+                                                    <span class="item-info__price--old">$52.00</span>
+                                                </div><!--end .item-info-->
+                                                <div class="item-img">
+                                                    <img src="images/sports1.jpg" alt="deal" class="img-responsive">
+                                                    <div class="item__hover"></div>
+                                                    <div class="add-cart">
+                                                        <button type="submit" class="add-cart__btn"><i class="fa fa-shopping-cart"></i>
+                                                        </button>
+                                                        <span class="add-cart__title">Add to cart</span>
+                                                    </div><!--end .add-cart-->
+                                                    <div class="another-choice">
+                                                        <a href="#" class="another-choice__link"><i class="fa fa-search"></i></a>
+                                                        <a href="#" class="another-choice__link"><i class="fa fa-heart"></i></a>
+                                                    </div><!--end .another-->
+                                                </div><!--end .item-img-->
+                                            </div><!--end .item-product-->
+                                        </div>
+                                        <div class="col-xs-6 col-sm-4 col-md-4">
+                                            <div class="item-product">
+                                                <a href="#" class="item-deal__link"></a>
+                                                <div class="item-info product-info">
+                                                    <a href="#" class="item-info__title">Headphone & earphone</a>
+                                                    <span class="item-info__price">$38.95</span>
+                                                    <span class="item-info__price--old">$52.00</span>
+                                                </div><!--end .item-info-->
+                                                <div class="item-img">
+                                                    <img src="images/sports1.jpg" alt="deal" class="img-responsive">
+                                                    <div class="item__hover"></div>
+                                                    <div class="add-cart">
+                                                        <button type="submit" class="add-cart__btn"><i class="fa fa-shopping-cart"></i></button>
+                                                        <span class="add-cart__title">Add to cart</span>
+                                                    </div><!--end .add-cart-->
+                                                    <div class="another-choice">
+                                                        <a href="#" class="another-choice__link"><i class="fa fa-search"></i></a>
+                                                        <a href="#" class="another-choice__link"><i class="fa fa-heart"></i></a>
+                                                    </div><!--end .another-->
+                                                </div><!--end .item-img-->
+                                            </div><!--end .item-product-->
+                                        </div>
+                                        <div class="col-xs-6 col-sm-4 col-md-4">
+                                            <div class="item-product">
+                                                <a href="#" class="item-deal__link"></a>
+                                                <div class="item-info product-info">
+                                                    <a href="#" class="item-info__title">Headphone & earphone</a>
+                                                    <span class="item-info__price">$38.95</span>
+                                                    <span class="item-info__price--old">$52.00</span>
+                                                </div><!--end .item-info-->
+                                                <div class="item-img">
+                                                    <img src="images/sports1.jpg" alt="deal" class="img-responsive">
+                                                    <div class="item__hover"></div>
+                                                    <div class="add-cart">
+                                                        <button type="submit" class="add-cart__btn"><i class="fa fa-shopping-cart"></i></button>
+                                                        <span class="add-cart__title">Add to cart</span>
+                                                    </div><!--end .add-cart-->
+                                                    <div class="another-choice">
+                                                        <a href="#" class="another-choice__link"><i class="fa fa-search"></i></a>
+                                                        <a href="#" class="another-choice__link"><i class="fa fa-heart"></i></a>
+                                                    </div><!--end .another-->
+                                                </div><!--end .item-img-->
+                                            </div><!--end .item-product-->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="sports1" class="tab-pane fade  ">
+                          <div class="row row-product">
+                              <div class="col-md-5 col-xs-12 banner-section">
+                                  <div  class="carousel slide" data-ride="carousel">
+                                      <!-- Indicators -->
+                                      <ol class="carousel-indicators">
+                                          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                          <li data-target="#myCarousel" data-slide-to="1"></li>
+                                          <li data-target="#myCarousel" data-slide-to="2"></li>
+                                      </ol>
+
+                                      <!-- Wrapper for slides -->
+                                      <div class="carousel-inner">
+                                          <div class="item item--slide active">
+                                              <a href="#" class="banner-section__link"></a>
+                                              <img src="images/sports0.jpg" alt="banner-sports" class="img-responsive img--size">
+                                              <div class="banner-info">
+                                                  <div class="banner-info--position">
+                                                      <div class="banner-info--bg"></div>
+                                                      <h3 class="banner-info__title">Sports</h3>
+                                                      <span class="banner-info__collect">Summer collection</span>
+                                                      <a href="#" class="banner-shopnow">Shop now</a>
+                                                      <p class="banner-info__gener">Generations</p>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                           <div class="item item--slide">
+                                              <a href="#" class="banner-section__link"></a>
+                                              <img src="images/sports0.jpg" alt="banner-sports" class="img-responsive img--size">
+                                              <div class="banner-info">
+                                                  <div class="banner-info--position">
+                                                      <div class="banner-info--bg"></div>
+                                                      <h3 class="banner-info__title">Sports</h3>
+                                                      <span class="banner-info__collect">Summer collection</span>
+                                                      <a href="#" class="banner-shopnow">Shop now</a>
+                                                      <p class="banner-info__gener">Generations</p>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                           <div class="item item--slide">
+                                              <a href="#" class="banner-section__link"></a>
+                                              <img src="images/sports0.jpg" alt="banner-sports" class="img-responsive img--size">
+                                              <div class="banner-info">
+                                                  <div class="banner-info--position">
+                                                      <div class="banner-info--bg"></div>
+                                                      <h3 class="banner-info__title">Sports</h3>
+                                                      <span class="banner-info__collect">Summer collection</span>
+                                                      <a href="#" class="banner-shopnow">Shop now</a>
+                                                      <p class="banner-info__gener">Generations</p>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div><!-- banner-section-->
+                              <div class="col-md-7 col-xs-12 product-section">
+                                  <div class="row row-product">
+                                      <div class="col-xs-6 col-sm-4 col-md-4">
+                                          <div class="item-product">
+                                              <a href="#" class="item-deal__link"></a>
+                                              <div class="item-info product-info">
+                                                  <a href="#" class="item-info__title">Headphone & earphone</a>
+                                                  <span class="item-info__price">$38.95</span>
+                                                  <span class="item-info__price--old">$52.00</span>
+                                              </div><!--end .item-info-->
+                                              <div class="item-img">
+                                                  <img src="images/sports1.jpg" alt="deal" class="img-responsive">
+                                                  <div class="item__hover"></div>
+                                                  <div class="add-cart">
+                                                      <button type="submit" class="add-cart__btn"><i
+                                                              class="fa fa-shopping-cart"></i>
+                                                      </button>
+                                                      <span class="add-cart__title">Add to cart</span>
+                                                  </div><!--end .add-cart-->
+                                                  <div class="another-choice">
+                                                      <a href="#" class="another-choice__link"><i
+                                                              class="fa fa-search"></i></a>
+                                                      <a href="#" class="another-choice__link"><i class="fa fa-heart"></i></a>
+                                                  </div><!--end .another-->
+                                              </div><!--end .item-img-->
+                                          </div><!--end .item-product-->
+                                      </div>
+                                      <div class="col-xs-6 col-sm-4 col-md-4">
+                                          <div class="item-product">
+                                              <a href="#" class="item-deal__link"></a>
+                                              <div class="item-info product-info">
+                                                  <a href="#" class="item-info__title">Headphone & earphone</a>
+                                                  <span class="item-info__price">$38.95</span>
+                                                  <span class="item-info__price--old">$52.00</span>
+                                              </div><!--end .item-info-->
+                                              <div class="item-img">
+                                                  <img src="images/sports1.jpg" alt="deal" class="img-responsive">
+                                                  <div class="item__hover"></div>
+                                                  <div class="add-cart">
+                                                      <button type="submit" class="add-cart__btn"><i class="fa fa-shopping-cart"></i>
+                                                      </button>
+                                                      <span class="add-cart__title">Add to cart</span>
+                                                  </div><!--end .add-cart-->
+                                                  <div class="another-choice">
+                                                      <a href="#" class="another-choice__link"><i class="fa fa-search"></i></a>
+                                                      <a href="#" class="another-choice__link"><i class="fa fa-heart"></i></a>
+                                                  </div><!--end .another-->
+                                              </div><!--end .item-img-->
+                                          </div><!--end .item-product-->
+                                      </div>
+                                      <div class="col-xs-6 col-sm-4 col-md-4">
+                                          <div class="item-product">
+                                              <a href="#" class="item-deal__link"></a>
+                                              <div class="item-info product-info">
+                                                  <a href="#" class="item-info__title">Headphone & earphone</a>
+                                                  <span class="item-info__price">$38.95</span>
+                                                  <span class="item-info__price--old">$52.00</span>
+                                              </div><!--end .item-info-->
+                                              <div class="item-img">
+                                                  <img src="images/sports1.jpg" alt="deal" class="img-responsive">
+                                                  <div class="item__hover"></div>
+                                                  <div class="add-cart">
+                                                      <button type="submit" class="add-cart__btn"><i class="fa fa-shopping-cart"></i>
+                                                      </button>
+                                                      <span class="add-cart__title">Add to cart</span>
+                                                  </div><!--end .add-cart-->
+                                                  <div class="another-choice">
+                                                      <a href="#" class="another-choice__link"><i class="fa fa-search"></i></a>
+                                                      <a href="#" class="another-choice__link"><i class="fa fa-heart"></i></a>
+                                                  </div><!--end .another-->
+                                              </div><!--end .item-img-->
+                                          </div><!--end .item-product-->
+                                      </div>
+                                      <div class="col-xs-6 col-sm-4 col-md-4">
+                                          <div class="item-product">
+                                              <a href="#" class="item-deal__link"></a>
+                                              <div class="item-info product-info">
+                                                  <a href="#" class="item-info__title">Headphone & earphone</a>
+                                                  <span class="item-info__price">$38.95</span>
+                                                  <span class="item-info__price--old">$52.00</span>
+                                              </div><!--end .item-info-->
+                                              <div class="item-img">
+                                                  <img src="images/sports1.jpg" alt="deal" class="img-responsive">
+                                                  <div class="item__hover"></div>
+                                                  <div class="add-cart">
+                                                      <button type="submit" class="add-cart__btn"><i class="fa fa-shopping-cart"></i>
+                                                      </button>
+                                                      <span class="add-cart__title">Add to cart</span>
+                                                  </div><!--end .add-cart-->
+                                                  <div class="another-choice">
+                                                      <a href="#" class="another-choice__link"><i class="fa fa-search"></i></a>
+                                                      <a href="#" class="another-choice__link"><i class="fa fa-heart"></i></a>
+                                                  </div><!--end .another-->
+                                              </div><!--end .item-img-->
+                                          </div><!--end .item-product-->
+                                      </div>
+                                      <div class="col-xs-6 col-sm-4 col-md-4">
+                                          <div class="item-product">
+                                              <a href="#" class="item-deal__link"></a>
+                                              <div class="item-info product-info">
+                                                  <a href="#" class="item-info__title">Headphone & earphone</a>
+                                                  <span class="item-info__price">$38.95</span>
+                                                  <span class="item-info__price--old">$52.00</span>
+                                              </div><!--end .item-info-->
+                                              <div class="item-img">
+                                                  <img src="images/sports1.jpg" alt="deal" class="img-responsive">
+                                                  <div class="item__hover"></div>
+                                                  <div class="add-cart">
+                                                      <button type="submit" class="add-cart__btn"><i class="fa fa-shopping-cart"></i></button>
+                                                      <span class="add-cart__title">Add to cart</span>
+                                                  </div><!--end .add-cart-->
+                                                  <div class="another-choice">
+                                                      <a href="#" class="another-choice__link"><i class="fa fa-search"></i></a>
+                                                      <a href="#" class="another-choice__link"><i class="fa fa-heart"></i></a>
+                                                  </div><!--end .another-->
+                                              </div><!--end .item-img-->
+                                          </div><!--end .item-product-->
+                                      </div>
+                                      <div class="col-xs-6 col-sm-4 col-md-4">
+                                          <div class="item-product">
+                                              <a href="#" class="item-deal__link"></a>
+                                              <div class="item-info product-info">
+                                                  <a href="#" class="item-info__title">Headphone & earphone</a>
+                                                  <span class="item-info__price">$38.95</span>
+                                                  <span class="item-info__price--old">$52.00</span>
+                                              </div><!--end .item-info-->
+                                              <div class="item-img">
+                                                  <img src="images/sports1.jpg" alt="deal" class="img-responsive">
+                                                  <div class="item__hover"></div>
+                                                  <div class="add-cart">
+                                                      <button type="submit" class="add-cart__btn"><i class="fa fa-shopping-cart"></i></button>
+                                                      <span class="add-cart__title">Add to cart</span>
+                                                  </div><!--end .add-cart-->
+                                                  <div class="another-choice">
+                                                      <a href="#" class="another-choice__link"><i class="fa fa-search"></i></a>
+                                                      <a href="#" class="another-choice__link"><i class="fa fa-heart"></i></a>
+                                                  </div><!--end .another-->
+                                              </div><!--end .item-img-->
+                                          </div><!--end .item-product-->
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                        </div>
+                        <div id="sports2" class="tab-pane fade  ">
+                          <div class="row row-product">
+                              <div class="col-md-5 col-xs-12 banner-section">
+                                  <div  class="carousel slide" data-ride="carousel">
+                                      <!-- Indicators -->
+                                      <ol class="carousel-indicators">
+                                          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                          <li data-target="#myCarousel" data-slide-to="1"></li>
+                                          <li data-target="#myCarousel" data-slide-to="2"></li>
+                                      </ol>
+
+                                      <!-- Wrapper for slides -->
+                                      <div class="carousel-inner">
+                                          <div class="item item--slide active">
+                                              <a href="#" class="banner-section__link"></a>
+                                              <img src="images/sports0.jpg" alt="banner-sports" class="img-responsive img--size">
+                                              <div class="banner-info">
+                                                  <div class="banner-info--position">
+                                                      <div class="banner-info--bg"></div>
+                                                      <h3 class="banner-info__title">Sports</h3>
+                                                      <span class="banner-info__collect">Summer collection</span>
+                                                      <a href="#" class="banner-shopnow">Shop now</a>
+                                                      <p class="banner-info__gener">Generations</p>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                           <div class="item item--slide">
+                                              <a href="#" class="banner-section__link"></a>
+                                              <img src="images/sports0.jpg" alt="banner-sports" class="img-responsive img--size">
+                                              <div class="banner-info">
+                                                  <div class="banner-info--position">
+                                                      <div class="banner-info--bg"></div>
+                                                      <h3 class="banner-info__title">Sports</h3>
+                                                      <span class="banner-info__collect">Summer collection</span>
+                                                      <a href="#" class="banner-shopnow">Shop now</a>
+                                                      <p class="banner-info__gener">Generations</p>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                           <div class="item item--slide">
+                                              <a href="#" class="banner-section__link"></a>
+                                              <img src="images/sports0.jpg" alt="banner-sports" class="img-responsive img--size">
+                                              <div class="banner-info">
+                                                  <div class="banner-info--position">
+                                                      <div class="banner-info--bg"></div>
+                                                      <h3 class="banner-info__title">Sports</h3>
+                                                      <span class="banner-info__collect">Summer collection</span>
+                                                      <a href="#" class="banner-shopnow">Shop now</a>
+                                                      <p class="banner-info__gener">Generations</p>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div><!-- banner-section-->
+                              <div class="col-md-7 col-xs-12 product-section">
+                                  <div class="row row-product">
+                                      <div class="col-xs-6 col-sm-4 col-md-4">
+                                          <div class="item-product">
+                                              <a href="#" class="item-deal__link"></a>
+                                              <div class="item-info product-info">
+                                                  <a href="#" class="item-info__title">Headphone & earphone</a>
+                                                  <span class="item-info__price">$38.95</span>
+                                                  <span class="item-info__price--old">$52.00</span>
+                                              </div><!--end .item-info-->
+                                              <div class="item-img">
+                                                  <img src="images/sports1.jpg" alt="deal" class="img-responsive">
+                                                  <div class="item__hover"></div>
+                                                  <div class="add-cart">
+                                                      <button type="submit" class="add-cart__btn"><i
+                                                              class="fa fa-shopping-cart"></i>
+                                                      </button>
+                                                      <span class="add-cart__title">Add to cart</span>
+                                                  </div><!--end .add-cart-->
+                                                  <div class="another-choice">
+                                                      <a href="#" class="another-choice__link"><i
+                                                              class="fa fa-search"></i></a>
+                                                      <a href="#" class="another-choice__link"><i class="fa fa-heart"></i></a>
+                                                  </div><!--end .another-->
+                                              </div><!--end .item-img-->
+                                          </div><!--end .item-product-->
+                                      </div>
+                                      <div class="col-xs-6 col-sm-4 col-md-4">
+                                          <div class="item-product">
+                                              <a href="#" class="item-deal__link"></a>
+                                              <div class="item-info product-info">
+                                                  <a href="#" class="item-info__title">Headphone & earphone</a>
+                                                  <span class="item-info__price">$38.95</span>
+                                                  <span class="item-info__price--old">$52.00</span>
+                                              </div><!--end .item-info-->
+                                              <div class="item-img">
+                                                  <img src="images/sports1.jpg" alt="deal" class="img-responsive">
+                                                  <div class="item__hover"></div>
+                                                  <div class="add-cart">
+                                                      <button type="submit" class="add-cart__btn"><i class="fa fa-shopping-cart"></i>
+                                                      </button>
+                                                      <span class="add-cart__title">Add to cart</span>
+                                                  </div><!--end .add-cart-->
+                                                  <div class="another-choice">
+                                                      <a href="#" class="another-choice__link"><i class="fa fa-search"></i></a>
+                                                      <a href="#" class="another-choice__link"><i class="fa fa-heart"></i></a>
+                                                  </div><!--end .another-->
+                                              </div><!--end .item-img-->
+                                          </div><!--end .item-product-->
+                                      </div>
+                                      <div class="col-xs-6 col-sm-4 col-md-4">
+                                          <div class="item-product">
+                                              <a href="#" class="item-deal__link"></a>
+                                              <div class="item-info product-info">
+                                                  <a href="#" class="item-info__title">Headphone & earphone</a>
+                                                  <span class="item-info__price">$38.95</span>
+                                                  <span class="item-info__price--old">$52.00</span>
+                                              </div><!--end .item-info-->
+                                              <div class="item-img">
+                                                  <img src="images/sports1.jpg" alt="deal" class="img-responsive">
+                                                  <div class="item__hover"></div>
+                                                  <div class="add-cart">
+                                                      <button type="submit" class="add-cart__btn"><i class="fa fa-shopping-cart"></i>
+                                                      </button>
+                                                      <span class="add-cart__title">Add to cart</span>
+                                                  </div><!--end .add-cart-->
+                                                  <div class="another-choice">
+                                                      <a href="#" class="another-choice__link"><i class="fa fa-search"></i></a>
+                                                      <a href="#" class="another-choice__link"><i class="fa fa-heart"></i></a>
+                                                  </div><!--end .another-->
+                                              </div><!--end .item-img-->
+                                          </div><!--end .item-product-->
+                                      </div>
+                                      <div class="col-xs-6 col-sm-4 col-md-4">
+                                          <div class="item-product">
+                                              <a href="#" class="item-deal__link"></a>
+                                              <div class="item-info product-info">
+                                                  <a href="#" class="item-info__title">Headphone & earphone</a>
+                                                  <span class="item-info__price">$38.95</span>
+                                                  <span class="item-info__price--old">$52.00</span>
+                                              </div><!--end .item-info-->
+                                              <div class="item-img">
+                                                  <img src="images/sports1.jpg" alt="deal" class="img-responsive">
+                                                  <div class="item__hover"></div>
+                                                  <div class="add-cart">
+                                                      <button type="submit" class="add-cart__btn"><i class="fa fa-shopping-cart"></i>
+                                                      </button>
+                                                      <span class="add-cart__title">Add to cart</span>
+                                                  </div><!--end .add-cart-->
+                                                  <div class="another-choice">
+                                                      <a href="#" class="another-choice__link"><i class="fa fa-search"></i></a>
+                                                      <a href="#" class="another-choice__link"><i class="fa fa-heart"></i></a>
+                                                  </div><!--end .another-->
+                                              </div><!--end .item-img-->
+                                          </div><!--end .item-product-->
+                                      </div>
+                                      <div class="col-xs-6 col-sm-4 col-md-4">
+                                          <div class="item-product">
+                                              <a href="#" class="item-deal__link"></a>
+                                              <div class="item-info product-info">
+                                                  <a href="#" class="item-info__title">Headphone & earphone</a>
+                                                  <span class="item-info__price">$38.95</span>
+                                                  <span class="item-info__price--old">$52.00</span>
+                                              </div><!--end .item-info-->
+                                              <div class="item-img">
+                                                  <img src="images/sports1.jpg" alt="deal" class="img-responsive">
+                                                  <div class="item__hover"></div>
+                                                  <div class="add-cart">
+                                                      <button type="submit" class="add-cart__btn"><i class="fa fa-shopping-cart"></i></button>
+                                                      <span class="add-cart__title">Add to cart</span>
+                                                  </div><!--end .add-cart-->
+                                                  <div class="another-choice">
+                                                      <a href="#" class="another-choice__link"><i class="fa fa-search"></i></a>
+                                                      <a href="#" class="another-choice__link"><i class="fa fa-heart"></i></a>
+                                                  </div><!--end .another-->
+                                              </div><!--end .item-img-->
+                                          </div><!--end .item-product-->
+                                      </div>
+                                      <div class="col-xs-6 col-sm-4 col-md-4">
+                                          <div class="item-product">
+                                              <a href="#" class="item-deal__link"></a>
+                                              <div class="item-info product-info">
+                                                  <a href="#" class="item-info__title">Headphone & earphone</a>
+                                                  <span class="item-info__price">$38.95</span>
+                                                  <span class="item-info__price--old">$52.00</span>
+                                              </div><!--end .item-info-->
+                                              <div class="item-img">
+                                                  <img src="images/sports1.jpg" alt="deal" class="img-responsive">
+                                                  <div class="item__hover"></div>
+                                                  <div class="add-cart">
+                                                      <button type="submit" class="add-cart__btn"><i class="fa fa-shopping-cart"></i></button>
+                                                      <span class="add-cart__title">Add to cart</span>
+                                                  </div><!--end .add-cart-->
+                                                  <div class="another-choice">
+                                                      <a href="#" class="another-choice__link"><i class="fa fa-search"></i></a>
+                                                      <a href="#" class="another-choice__link"><i class="fa fa-heart"></i></a>
+                                                  </div><!--end .another-->
+                                              </div><!--end .item-img-->
+                                          </div><!--end .item-product-->
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                        </div>
+                        <div id="sports3" class="tab-pane fade  ">
+                          <div class="row row-product">
+                              <div class="col-md-5 col-xs-12 banner-section">
+                                  <div  class="carousel slide" data-ride="carousel">
+                                      <!-- Indicators -->
+                                      <ol class="carousel-indicators">
+                                          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                          <li data-target="#myCarousel" data-slide-to="1"></li>
+                                          <li data-target="#myCarousel" data-slide-to="2"></li>
+                                      </ol>
+
+                                      <!-- Wrapper for slides -->
+                                      <div class="carousel-inner">
+                                          <div class="item item--slide active">
+                                              <a href="#" class="banner-section__link"></a>
+                                              <img src="images/sports0.jpg" alt="banner-sports" class="img-responsive img--size">
+                                              <div class="banner-info">
+                                                  <div class="banner-info--position">
+                                                      <div class="banner-info--bg"></div>
+                                                      <a href="#" class="banner__link banner--sport text-center">Sports fashion</a>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                           <div class="item item--slide">
+                                              <a href="#" class="banner-section__link"></a>
+                                              <img src="images/sports0.jpg" alt="banner-sports" class="img-responsive img--size">
+                                              <div class="banner-info">
+                                                  <div class="banner-info--position">
+                                                      <div class="banner-info--bg"></div>
+                                                      <a href="#" class="banner__link banner--sport text-center">Sports fashion</a>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                           <div class="item item--slide">
+                                              <a href="#" class="banner-section__link"></a>
+                                              <img src="images/sports0.jpg" alt="banner-sports" class="img-responsive img--size">
+                                              <div class="banner-info">
+                                                  <div class="banner-info--position">
+                                                      <div class="banner-info--bg"></div>
+                                                      <a href="#" class="banner__link banner--sport text-center">Sports fashion</a>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div><!-- banner-section-->
+                              <div class="col-md-7 col-xs-12 product-section">
+                                  <div class="row row-product">
+                                      <div class="col-xs-6 col-sm-4 col-md-4">
+                                          <div class="item-product">
+                                              <a href="#" class="item-deal__link"></a>
+                                              <div class="item-info product-info">
+                                                  <a href="#" class="item-info__title">Headphone & earphone</a>
+                                                  <span class="item-info__price">$38.95</span>
+                                                  <span class="item-info__price--old">$52.00</span>
+                                              </div><!--end .item-info-->
+                                              <div class="item-img">
+                                                  <img src="images/sports1.jpg" alt="deal" class="img-responsive">
+                                                  <div class="item__hover"></div>
+                                                  <div class="add-cart">
+                                                      <button type="submit" class="add-cart__btn"><i
+                                                              class="fa fa-shopping-cart"></i>
+                                                      </button>
+                                                      <span class="add-cart__title">Add to cart</span>
+                                                  </div><!--end .add-cart-->
+                                                  <div class="another-choice">
+                                                      <a href="#" class="another-choice__link"><i
+                                                              class="fa fa-search"></i></a>
+                                                      <a href="#" class="another-choice__link"><i class="fa fa-heart"></i></a>
+                                                  </div><!--end .another-->
+                                              </div><!--end .item-img-->
+                                          </div><!--end .item-product-->
+                                      </div>
+                                      <div class="col-xs-6 col-sm-4 col-md-4">
+                                          <div class="item-product">
+                                              <a href="#" class="item-deal__link"></a>
+                                              <div class="item-info product-info">
+                                                  <a href="#" class="item-info__title">Headphone & earphone</a>
+                                                  <span class="item-info__price">$38.95</span>
+                                                  <span class="item-info__price--old">$52.00</span>
+                                              </div><!--end .item-info-->
+                                              <div class="item-img">
+                                                  <img src="images/sports1.jpg" alt="deal" class="img-responsive">
+                                                  <div class="item__hover"></div>
+                                                  <div class="add-cart">
+                                                      <button type="submit" class="add-cart__btn"><i class="fa fa-shopping-cart"></i>
+                                                      </button>
+                                                      <span class="add-cart__title">Add to cart</span>
+                                                  </div><!--end .add-cart-->
+                                                  <div class="another-choice">
+                                                      <a href="#" class="another-choice__link"><i class="fa fa-search"></i></a>
+                                                      <a href="#" class="another-choice__link"><i class="fa fa-heart"></i></a>
+                                                  </div><!--end .another-->
+                                              </div><!--end .item-img-->
+                                          </div><!--end .item-product-->
+                                      </div>
+                                      <div class="col-xs-6 col-sm-4 col-md-4">
+                                          <div class="item-product">
+                                              <a href="#" class="item-deal__link"></a>
+                                              <div class="item-info product-info">
+                                                  <a href="#" class="item-info__title">Headphone & earphone</a>
+                                                  <span class="item-info__price">$38.95</span>
+                                                  <span class="item-info__price--old">$52.00</span>
+                                              </div><!--end .item-info-->
+                                              <div class="item-img">
+                                                  <img src="images/sports1.jpg" alt="deal" class="img-responsive">
+                                                  <div class="item__hover"></div>
+                                                  <div class="add-cart">
+                                                      <button type="submit" class="add-cart__btn"><i class="fa fa-shopping-cart"></i>
+                                                      </button>
+                                                      <span class="add-cart__title">Add to cart</span>
+                                                  </div><!--end .add-cart-->
+                                                  <div class="another-choice">
+                                                      <a href="#" class="another-choice__link"><i class="fa fa-search"></i></a>
+                                                      <a href="#" class="another-choice__link"><i class="fa fa-heart"></i></a>
+                                                  </div><!--end .another-->
+                                              </div><!--end .item-img-->
+                                          </div><!--end .item-product-->
+                                      </div>
+                                      <div class="col-xs-6 col-sm-4 col-md-4">
+                                          <div class="item-product">
+                                              <a href="#" class="item-deal__link"></a>
+                                              <div class="item-info product-info">
+                                                  <a href="#" class="item-info__title">Headphone & earphone</a>
+                                                  <span class="item-info__price">$38.95</span>
+                                                  <span class="item-info__price--old">$52.00</span>
+                                              </div><!--end .item-info-->
+                                              <div class="item-img">
+                                                  <img src="images/sports1.jpg" alt="deal" class="img-responsive">
+                                                  <div class="item__hover"></div>
+                                                  <div class="add-cart">
+                                                      <button type="submit" class="add-cart__btn"><i class="fa fa-shopping-cart"></i>
+                                                      </button>
+                                                      <span class="add-cart__title">Add to cart</span>
+                                                  </div><!--end .add-cart-->
+                                                  <div class="another-choice">
+                                                      <a href="#" class="another-choice__link"><i class="fa fa-search"></i></a>
+                                                      <a href="#" class="another-choice__link"><i class="fa fa-heart"></i></a>
+                                                  </div><!--end .another-->
+                                              </div><!--end .item-img-->
+                                          </div><!--end .item-product-->
+                                      </div>
+                                      <div class="col-xs-6 col-sm-4 col-md-4">
+                                          <div class="item-product">
+                                              <a href="#" class="item-deal__link"></a>
+                                              <div class="item-info product-info">
+                                                  <a href="#" class="item-info__title">Headphone & earphone</a>
+                                                  <span class="item-info__price">$38.95</span>
+                                                  <span class="item-info__price--old">$52.00</span>
+                                              </div><!--end .item-info-->
+                                              <div class="item-img">
+                                                  <img src="images/sports1.jpg" alt="deal" class="img-responsive">
+                                                  <div class="item__hover"></div>
+                                                  <div class="add-cart">
+                                                      <button type="submit" class="add-cart__btn"><i class="fa fa-shopping-cart"></i></button>
+                                                      <span class="add-cart__title">Add to cart</span>
+                                                  </div><!--end .add-cart-->
+                                                  <div class="another-choice">
+                                                      <a href="#" class="another-choice__link"><i class="fa fa-search"></i></a>
+                                                      <a href="#" class="another-choice__link"><i class="fa fa-heart"></i></a>
+                                                  </div><!--end .another-->
+                                              </div><!--end .item-img-->
+                                          </div><!--end .item-product-->
+                                      </div>
+                                      <div class="col-xs-6 col-sm-4 col-md-4">
+                                          <div class="item-product">
+                                              <a href="#" class="item-deal__link"></a>
+                                              <div class="item-info product-info">
+                                                  <a href="#" class="item-info__title">Headphone & earphone</a>
+                                                  <span class="item-info__price">$38.95</span>
+                                                  <span class="item-info__price--old">$52.00</span>
+                                              </div><!--end .item-info-->
+                                              <div class="item-img">
+                                                  <img src="images/sports1.jpg" alt="deal" class="img-responsive">
+                                                  <div class="item__hover"></div>
+                                                  <div class="add-cart">
+                                                      <button type="submit" class="add-cart__btn"><i class="fa fa-shopping-cart"></i></button>
+                                                      <span class="add-cart__title">Add to cart</span>
+                                                  </div><!--end .add-cart-->
+                                                  <div class="another-choice">
+                                                      <a href="#" class="another-choice__link"><i class="fa fa-search"></i></a>
+                                                      <a href="#" class="another-choice__link"><i class="fa fa-heart"></i></a>
+                                                  </div><!--end .another-->
+                                              </div><!--end .item-img-->
+                                          </div><!--end .item-product-->
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                        </div>
+                    </div>
+                    </div>
+                </div><!--end .main-section-->
+            </div>
+
+          </div>
+        </section>
+    </main>
+    <footer>
+      <div class="container">
+          <div class="footer-top">
+              <div class="row">
+                  <div class="col-xs-12 col-md-3">
+                      <div class="info-shop">
+                          <a href="#" class="logo-footer"><img src="images/Logo-footer.png" alt=""></a>
+                          <p class="info-shop__add"><b>Address: </b>Example Street 68, Mahattan,
+                              New York, USA.</p>
+                          <p class="info-shop__add"><b>Phone: </b>+00 123 456 789</p>
+                          <p class="info-shop__add"><b>Email: support@business.com</b>
+                      </div><!--end .info-shop-->
+                  </div>
+                  <div class="col-xs-12 col-md-2">
+                      <div class="company">
+                          <h4 class="title-footer">Company</h4>
+                          <ul class="list-info">
+                              <li class="item-info"><a href="#" class="item-info__link">About us</a></li>
+                              <li class="item-info"><a href="#" class="item-info__link">Testimonials</a></li>
+                              <li class="item-info"><a href="#" class="item-info__link">Affiliate Program</a></li>
+                              <li class="item-info"><a href="#" class="item-info__link">Terms & Conditions</a></li>
+                              <li class="item-info"><a href="#" class="item-info__link">Contact Us</a></li>
+                          </ul>
+                      </div>
+                  </div>
+
+                  <div class="col-xs-12 col-md-2">
+                      <div class="account">
+                          <h4 class="title-footer">My Account</h4>
+                          <ul class="list-info">
+                              <li class="item-info"><a href="#" class="item-info__link">My order</a></li>
+                              <li class="item-info"><a href="#" class="item-info__link">My Wishlist</a></li>
+                              <li class="item-info"><a href="#" class="item-info__link">My Credit Slip</a></li>
+                              <li class="item-info"><a href="#" class="item-info__link">My Addresses</a></li>
+                              <li class="item-info"><a href="#" class="item-info__link">My Personal Info</a></li>
+                          </ul>
+                      </div>
+                  </div>
+                  <div class="col-xs-12 col-md-2">
+                      <div class="support">
+                          <h4 class="title-footer">Support</h4>
+                          <ul class="list-info">
+                              <li class="item-info"><a href="#" class="item-info__link">New user guide</a></li>
+                              <li class="item-info"><a href="#" class="item-info__link">help center</a></li>
+                              <li class="item-info"><a href="#" class="item-info__link">Refund Policy</a></li>
+                              <li class="item-info"><a href="#" class="item-info__link">Report Spam</a></li>
+                              <li class="item-info"><a href="#" class="item-info__link">FAQ</a></li>
+                          </ul>
+                      </div>
+                  </div>
+                  <div class="col-xs-12 col-md-3">
+                      <h4 class="title-footer">Newsletter </h4>
+                      <form action="" class="send-mail">
+                          <div class="input-group send-mail--input">
+                              <input type="text" class="form-control text-center send-mail__input"
+                                     placeholder="Your email address">
+                              <span class="input-group-btn">
+                                  <button class="btn send-mail__btn" type="submit">OK</button>
+                              </span>
+                          </div>
+                      </form>
+                      <h4 class="title-footer">Let's socialize</h4>
+                      <div class="footer-social">
+                          <a href="#" class="social_link social--fb text-center"><i class="fa fa-facebook"></i></a>
+                          <a href="#" class="social_link social--pi text-center"><i class="fa fa-pinterest"></i></a>
+                          <a href="#" class="social_link social--tw text-center"><i class="fa fa-twitter"></i></a>
+                          <a href="#" class="social_link social--gp text-center"><i class="fa fa-google-plus"></i></a>
+                          <a href="#" class="social_link social--fb text-center"><i class="fa fa-facebook"></i></a>
+                      </div>
+                  </div>
+              </div>
+
+          </div><!--end .footer-top-->
+          <div class="footer-bank">
+              <h4 class="suggest__title">ACCEPTED PAYMENT METHODS</h4>
+              <ul class="list-bank">
+                  <li class="item-bank"><img src="images/bank/bank1.png" alt=""></li>
+                  <li class="item-bank"><img src="images/bank/bank2.png" alt=""></li>
+                  <li class="item-bank"><img src="images/bank/bank3.png" alt=""></li>
+                  <li class="item-bank"><img src="images/bank/bank4.png" alt=""></li>
+                  <li class="item-bank"><img src="images/bank/bank5.png" alt=""></li>
+                  <li class="item-bank"><img src="images/bank/bank6.png" alt=""></li>
+                  <li class="item-bank"><img src="images/bank/bank7.png" alt=""></li>
+                  <li class="item-bank"><img src="images/bank/bank8.png" alt=""></li>
+                  <li class="item-bank"><img src="images/bank/bank9.png" alt=""></li>
+                  <li class="item-bank"><img src="images/bank/bank10.png" alt=""></li>
+              </ul>
+          </div><!--end .footer-bank-->
+          <div class="footer-suggest">
+              <div class="sugggest">
+                  <h4 class="suggest__title">HOT SEARCHED KEYWORDS:</h4>
+                  <ul class="suggest-list">
+                      <li class="suggest-item"><a href="#" class="suggest-item__link">Xiaomi Mi3</a></li>
+                      <li class="suggest-item"><a href="#" class="suggest-item__link">Xiaomi Mi3</a></li>
+                      <li class="suggest-item"><a href="#" class="suggest-item__link">Xiaomi Mi3</a></li>
+                      <li class="suggest-item"><a href="#" class="suggest-item__link">Xiaomi Mi3</a></li>
+                      <li class="suggest-item"><a href="#" class="suggest-item__link">Xiaomi Mi3</a></li>
+                      <li class="suggest-item"><a href="#" class="suggest-item__link">Xiaomi Mi3</a></li>
+                      <li class="suggest-item"><a href="#" class="suggest-item__link">Xiaomi Mi3</a></li>
+                      <li class="suggest-item"><a href="#" class="suggest-item__link">Xiaomi Mi3</a></li>
+                      <li class="suggest-item"><a href="#" class="suggest-item__link item--last">Xiaomi Mi3</a></li>
+                  </ul>
+              </div><!--end .suggest-->
+              <div class="sugggest">
+                  <h4 class="suggest__title">HOT SEARCHED KEYWORDS:</h4>
+                  <ul class="suggest-list">
+                      <li class="suggest-item"><a href="#" class="suggest-item__link">Xiaomi Mi3</a></li>
+                      <li class="suggest-item"><a href="#" class="suggest-item__link">Xiaomi Mi3</a></li>
+                      <li class="suggest-item"><a href="#" class="suggest-item__link">Xiaomi Mi3</a></li>
+                      <li class="suggest-item"><a href="#" class="suggest-item__link">Xiaomi Mi3</a></li>
+                      <li class="suggest-item"><a href="#" class="suggest-item__link">Xiaomi Mi3</a></li>
+                      <li class="suggest-item"><a href="#" class="suggest-item__link">Xiaomi Mi3</a></li>
+                      <li class="suggest-item"><a href="#" class="suggest-item__link">Xiaomi Mi3</a></li>
+                      <li class="suggest-item"><a href="#" class="suggest-item__link">Xiaomi Mi3</a></li>
+                      <li class="suggest-item"><a href="#" class="suggest-item__link item--last">Xiaomi Mi3</a></li>
+                  </ul>
+              </div><!--end .suggest-->
+              <div class="sugggest">
+                  <h4 class="suggest__title">HOT SEARCHED KEYWORDS:</h4>
+                  <ul class="suggest-list">
+                      <li class="suggest-item"><a href="#" class="suggest-item__link">Xiaomi Mi3</a></li>
+                      <li class="suggest-item"><a href="#" class="suggest-item__link">Xiaomi Mi3</a></li>
+                      <li class="suggest-item"><a href="#" class="suggest-item__link">Xiaomi Mi3</a></li>
+                      <li class="suggest-item"><a href="#" class="suggest-item__link">Xiaomi Mi3</a></li>
+                      <li class="suggest-item"><a href="#" class="suggest-item__link">Xiaomi Mi3</a></li>
+                      <li class="suggest-item"><a href="#" class="suggest-item__link">Xiaomi Mi3</a></li>
+                      <li class="suggest-item"><a href="#" class="suggest-item__link">Xiaomi Mi3</a></li>
+                      <li class="suggest-item"><a href="#" class="suggest-item__link">Xiaomi Mi3</a></li>
+                      <li class="suggest-item"><a href="#" class="suggest-item__link item--last">Xiaomi Mi3</a></li>
+                  </ul>
+              </div><!--end .suggest-->
+              <div class="sugggest">
+                  <h4 class="suggest__title">HOT SEARCHED KEYWORDS:</h4>
+                  <ul class="suggest-list">
+                      <li class="suggest-item"><a href="#" class="suggest-item__link">Xiaomi Mi3</a></li>
+                      <li class="suggest-item"><a href="#" class="suggest-item__link">Xiaomi Mi3</a></li>
+                      <li class="suggest-item"><a href="#" class="suggest-item__link">Xiaomi Mi3</a></li>
+                      <li class="suggest-item"><a href="#" class="suggest-item__link">Xiaomi Mi3</a></li>
+                      <li class="suggest-item"><a href="#" class="suggest-item__link">Xiaomi Mi3</a></li>
+                      <li class="suggest-item"><a href="#" class="suggest-item__link">Xiaomi Mi3</a></li>
+                      <li class="suggest-item"><a href="#" class="suggest-item__link">Xiaomi Mi3</a></li>
+                      <li class="suggest-item"><a href="#" class="suggest-item__link">Xiaomi Mi3</a></li>
+                      <li class="suggest-item"><a href="#" class="suggest-item__link item--last">Xiaomi Mi3</a></li>
+                  </ul>
+              </div><!--end .suggest-->
+              <div class="sugggest">
+                  <h4 class="suggest__title">HOT SEARCHED KEYWORDS:</h4>
+                  <ul class="suggest-list">
+                      <li class="suggest-item"><a href="#" class="suggest-item__link">Xiaomi Mi3</a></li>
+                      <li class="suggest-item"><a href="#" class="suggest-item__link">Xiaomi Mi3</a></li>
+                      <li class="suggest-item"><a href="#" class="suggest-item__link">Xiaomi Mi3</a></li>
+                      <li class="suggest-item"><a href="#" class="suggest-item__link">Xiaomi Mi3</a></li>
+                      <li class="suggest-item"><a href="#" class="suggest-item__link">Xiaomi Mi3</a></li>
+                      <li class="suggest-item"><a href="#" class="suggest-item__link">Xiaomi Mi3</a></li>
+                      <li class="suggest-item"><a href="#" class="suggest-item__link">Xiaomi Mi3</a></li>
+                      <li class="suggest-item"><a href="#" class="suggest-item__link">Xiaomi Mi3</a></li>
+                      <li class="suggest-item"><a href="#" class="suggest-item__link item--last">Xiaomi Mi3</a></li>
+                  </ul>
+              </div><!--end .suggest-->
+              <div class="sugggest">
+                  <h4 class="suggest__title">HOT SEARCHED KEYWORDS:</h4>
+                  <ul class="suggest-list">
+                      <li class="suggest-item"><a href="#" class="suggest-item__link">Xiaomi Mi3</a></li>
+                      <li class="suggest-item"><a href="#" class="suggest-item__link">Xiaomi Mi3</a></li>
+                      <li class="suggest-item"><a href="#" class="suggest-item__link">Xiaomi Mi3</a></li>
+                      <li class="suggest-item"><a href="#" class="suggest-item__link">Xiaomi Mi3</a></li>
+                      <li class="suggest-item"><a href="#" class="suggest-item__link">Xiaomi Mi3</a></li>
+                      <li class="suggest-item"><a href="#" class="suggest-item__link">Xiaomi Mi3</a></li>
+                      <li class="suggest-item"><a href="#" class="suggest-item__link">Xiaomi Mi3</a></li>
+                      <li class="suggest-item"><a href="#" class="suggest-item__link">Xiaomi Mi3</a></li>
+                      <li class="suggest-item"><a href="#" class="suggest-item__link item--last">Xiaomi Mi3</a></li>
+                  </ul>
+              </div><!--end .suggest-->
+
+          </div><!--end .footer-midle-->
+          <div class="footer-bottom">
+              <p class="copy-right text-center">Copyrights © 2015 KuteShop. All Rights Reserved. Designed by
+                  KuteThemes.com</p>
+          </div>
+      </div>
+    </footer>
+</body>
+</html>
