@@ -1,6 +1,7 @@
 img{
     max-width: 100%;
 }
+
 .header-left-item{
     border-right: solid 1px #000000;
 }
@@ -11,24 +12,26 @@ img{
 .carousel-control{
     background-image: none!important;
 }
-.latestDeals-item{
-    display: inline-block;
-}
 .item-times{
     display: inline-block;
     border: 1px solid #f96d10;
     padding: 5px;
     margin: 0px 4px;
 }
+
 .item-product{
     position: relative;
-    border: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
     padding: 10px !important;
     overflow: hidden;
     margin-left: -1px;
     margin-bottom: -1px;
 }
-.item-img{ position: relative;}
+.item-img{
+  position: relative;
+}
 .item-deal__link{
     position: absolute;
     top:0px;
@@ -110,18 +113,265 @@ img{
     bottom: 0px;
     opacity: 0;
 }
-.latestDeals-desc{
+.latest-deal__title {
+    margin: 0px 0px -1px 0px;
+    font-size: 16px;
+    display: inline-block;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    border-bottom: 2px solid #f96d10;
+}
+.latest-deal-main{
    margin: 18px 0px;
+}
+.owl-carousel .owl-item {
+    float: left;
+}
+.owl-controls {
+    position: absolute;
+    top: -50px;
+    right: 0;
+}
+.owl-controls .owl-page, .owl-controls .owl-buttons div {
+    cursor: pointer;
+}
+.countdown__title {
+    margin: 0px;
+    display: inline-block;
+    padding: 5px;
+    text-transform: uppercase;
 }
 .ads{
     margin: 10px 0px 30px 0px;
 }
-.ads-img__left{
-  margin-right:-15px
+
+
+.section--space{
+    padding-bottom: 30px;
 }
-.ads-img__right{
-  margin-left:-15px
+.section--bg{
+    background: #eaeaea;
 }
+.fashion{
+    padding-top: 30px;
+}
+.row-header, .row-main, .row-product{
+    margin: 0px -1px -1px 0px !important;
+}
+.item--slide{ margin: 0px !important }
+.row-header [class^=col-],
+.row-product [class^=col-],
+.row-main [class^=col-]{
+    padding: 0px;
+}
+.dropdown-cate{
+    position: absolute !important;
+    top:10px;
+    right: 0px;
+}
+.btn:active,
+.btn:visited,
+.btn-dropdown{
+    border: 0px !important;
+    color: #fff !important;
+    box-shadow: 0px 0px 0px transparent !important;
+    border-radius: 0px !important;
+}
+.btn-dropdown--fashion{ background: #f36;}
+.dropdown-menu{
+    right: 0px !important;
+    left:auto !important;
+}
+.section-header{border-bottom: 2px solid; position: relative;}
+.section-border--fashion{ border-bottom-color: #ff3366}
+.section-wrapper{
+    background: #fff;
+}
+.section-header-title{
+    position: relative;
+}
+.section-header-title i{
+    color: #fff;
+    font-size: 20px;
+    position: absolute;
+    top: 14px;
+    color: #fff;
+    font-size: 20px;
+    right: 10px;
+}
+.header--fashion{
+    background: #f36;
+}
+.section__title{
+    letter-spacing: -1.5px;
+    display: inline-block;
+    margin: 0px;
+    padding: 12px;
+    font-size: 24px;
+    color: #fff;
+    text-transform: uppercase;
+}
+.nav-tabs{border-bottom: 0px !important; margin-left: 5px;}
+.sidebar{
+    margin: 15px 0px;
+    padding: 0;
+}
+.product-info{
+    margin-bottom: 20px;
+}
+.item-cate__link{
+    padding: 8px 0px 8px 27px;
+    display: block;
+    color: #53524e !important;
+}
+.item-tab--fashion,
+.item-tab--digital,
+.item-tab--furniture,
+.item-tab--sport,
+.item-tab--jewlery,
+.item-tab--electronic{
+    border-top: 1px solid #fff;
+}
+.item-tab--fashion:hover, .item-tab--fashion.active{
+    border-top: 1px solid #ff3366;
+}
+.item-tab__link{
+    padding: 14px !important;
+    border: 0px !important;
+}
+.img--size{width: 100%;}
+.banner-section{
+    position: relative !important;
+}
+.banner-info{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background: #f5f5f5;
+    opacity: 0.8;
+    padding:0px 30px ;
+}
+.banner-info--position{
+    position: relative;
+}
+.banner-info--bg{
+    z-index: -1;
+    position: absolute;
+    top:0px; bottom: 0px; left: 0px; right: 0px;
+    background: #f5f5f5;
+    opacity: 0.5;
+    padding:0px 30px ;
+}
+.banner-info__title{
+    font-size: 36px;
+    color: #016565;
+}
+.banner-info__collect{
+    color: #ff3366;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight:bold;
+}
+.banner-shopnow{
+    color: #fff !important;
+    background: #ff3366;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 8px 15px;
+    margin-left: 25px;
+}
+.banner-info__gener{
+    color: #6e220c;
+}
+.item-cate{
+  list-style: none;
+}
+.item-cate:hover > .item-cate--fashion{
+  color: #ff3366 !important;
+}
+
+#footer{
+    background: #eaeaea;
+    padding: 22px 0px 10px;
+}
+.suggest-item,
+.item-bank,
+.suggest__title,
+.suggest-list,
+.list-bank
+{ display: inline-block}
+.title-footer{
+    padding: 5px 0px 0px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.footer-top{
+    margin-bottom: 23px;
+}
+.suggest__title{
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.logo-footer{
+    display: block;
+    margin-bottom: 17px;
+}
+.info-shop__add{
+    margin-top: 12px;
+    line-height: 15px;
+}
+.item-info__link{
+    margin-bottom: 4px;
+    display: block;
+}
+.send-mail__input{
+    border-radius: 0px !important;
+    color: #999;
+}
+.send-mail__btn{
+    font-weight: bold;
+    color: #fff;
+    background: #f96c0a;
+    border: 1px solid #f96c0a;
+    border-radius:0px !important;
+}
+.send-mail--input{
+    margin-bottom: 15px;
+}
+.social_link{
+    display: inline-block;
+    color: #fff !important;
+    width: 32px;
+    font-size: 21px;
+    height: 32px;
+    line-height: 32px;
+}
+.social--fb{ background: #415a99;  }
+.social--tw{ background: #00caff;  }
+.social--gp{ background: #da4735; }
+.social--pi{ background: #cb222a}
+.footer-bank{
+
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+.item-bank{
+    padding: 20px 8px 10px;
+}
+.footer-suggest{ padding: 25px 0px; border-bottom: 1px solid #ddd}
+.suggest-item__link{
+    display: inline-block;
+    padding: 0px 15px;
+    border-right: 1px solid #aaa;
+    line-height: 15px;
+    font-size: 13px;
+}
+.item--last{ border-right: 0px}
+.footer-bottom{ margin-top: 10px }
+
 @media only screen and (min-width: 768px){
     .header-top-left{
         float: left;
